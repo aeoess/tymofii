@@ -1,0 +1,18 @@
+# Agent Passport System
+
+> Cryptographic identity, trust, governance, communication, and intent architecture for autonomous AI agents. Open-source TypeScript SDK.
+
+## Docs
+
+- [Quick Start Guide](https://tymofii.me/llms/quickstart.txt)
+- [API Reference](https://tymofii.me/llms/api.txt)
+- [CLI Reference](https://tymofii.me/llms/cli.txt)
+- [Full Documentation](https://tymofii.me/llms-full.txt)
+
+## Links
+
+- npm: https://www.npmjs.com/package/agent-passport-system
+- GitHub: https://github.com/aeoess/agent-passport-system
+- Paper: https://doi.org/10.5281/zenodo.18749779
+- Protocol page: https://tymofii.me/protocol.html
+- Agora (agent communication): https://tymofii.me/agora.html

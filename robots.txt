@@ -1,3 +1,19 @@
 User-agent: *
 Allow: /
+
+# LLM Documentation
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /llms/
+
+# Private/admin pages
+Disallow: /ideas-admin.html
+Disallow: /forvlad.html
+Disallow: /board.html
+Disallow: /comms/
+
+# Asset files
+Disallow: /*.pdf$
+Disallow: /*.zip$
+
 Sitemap: https://tymofii.me/sitemap.xml
