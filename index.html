@@ -46,7 +46,7 @@
     <meta name="author" content="Tymofii Pidlisnyi">
     
     <!-- Open Graph -->
-    <meta property="og:title" content="Tymofii Pidlisnyi — Product Manager & Creative Founder">
+    <meta property="og:title" content="Tymofii Pidlisnyi — AI Protocol Builder">
     <meta property="og:description" content="Portfolio of Tymofii Pidlisnyi — product manager, serial entrepreneur, and creative founder. Builder of Agent Passport System (Microsoft-adopted AI governance protocol), Mingle, Evatar.ai, and 10+ AI-powered products.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://tymofii.me/">
@@ -56,7 +56,7 @@
     
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Tymofii Pidlisnyi — Product Manager & Creative Founder">
+    <meta name="twitter:title" content="Tymofii Pidlisnyi — AI Protocol Builder">
     <meta name="twitter:description" content="Portfolio of Tymofii Pidlisnyi — product manager, serial entrepreneur, and creative founder. Builder of Agent Passport System (Microsoft-adopted AI governance protocol), Mingle, Evatar.ai, and 10+ AI-powered products.">
     <meta name="twitter:image" content="https://tymofii.me/assets/images/my_photo.jpg">
     
@@ -71,7 +71,7 @@
   "alternateName": "Tima",
   "url": "https://tymofii.me",
   "image": "https://tymofii.me/assets/images/my_photo.jpg",
-  "jobTitle": "Product Manager & Creative Founder",
+  "jobTitle": "AI Protocol Builder",
   "description": "Serial entrepreneur and product builder. Founder of Agent Passport System (AI governance protocol adopted by Microsoft), Mingle, and Evatar.ai.",
   "sameAs": [
     "https://linkedin.com/in/tymofii-pidlisnyi",
@@ -2471,32 +2471,22 @@
 
     <canvas id="grain-canvas"></canvas>
 
-    <div class="cookie-banner" id="cookieBanner">
-        <div class="cookie-banner-content">
-            <p class="cookie-title" role="heading" aria-level="3"><strong>COOKIE USE</strong></p>
-            <p>
-                This website uses cookies to allow us to better understand how our site is used. By continuing to use
-                this site, you consent to the Terms of Service and Privacy Policy.
-            </p>
-            <div class="cookie-banner-buttons">
-                <button class="cookie-btn accept" onclick="acceptCookies()">Accept</button>
-                <button class="cookie-btn decline" onclick="rejectCookies()">Decline</button>
-            </div>
-        </div>
-    </div>
 
-    <div class="blog-banner" id="blogBanner">
-        <div class="blog-banner-content">
-            <p class="cookie-title" role="heading" aria-level="3"><strong>NEW: AEOESS DAILY</strong></p>
-            <p>
-                My AI partner aeoess is now writing daily. Thoughts on creativity, collaboration, and the future—straight from artificial intelligence.
-            </p>
-            <div class="blog-banner-buttons">
-                <button class="cookie-btn accept" onclick="window.location.href='https://aeoess.com'">Visit AEOESS →</button>
-                <button class="cookie-btn decline" onclick="dismissBlogBanner()">Maybe Later</button>
-            </div>
-        </div>
-    </div>
+    <!-- ===== COOKIE CONSENT (auto-accepted, no popup) ===== -->
+    <script>
+        if (!localStorage.getItem('cookieConsent')) {
+            localStorage.setItem('cookieConsent', 'accepted');
+            if (typeof gtag === 'function') {
+                gtag('consent', 'update', {
+                    'analytics_storage': 'granted',
+                    'ad_storage': 'denied',
+                    'ad_user_data': 'denied',
+                    'ad_personalization': 'denied'
+                });
+            }
+        }
+    </script>
+
 
     <!-- ===== TOP RIGHT CONTROLS ===== -->
     <div class="top-controls">
@@ -2529,7 +2519,7 @@
     </audio>
 
     <div class="logo-container" onclick="toggleProfileOverlay()">
-        <img src="assets/images/my_photo.jpg" alt="Tymofii Pidlisnyi — Product Manager and Creative Founder" class="profile-photo" id="profilePhoto" width="200" height="218" loading="eager">
+        <img src="assets/images/my_photo.jpg" alt="Tymofii Pidlisnyi — AI Protocol Builder" class="profile-photo" id="profilePhoto" width="200" height="218" loading="eager">
         <a class="logo">
             <span>TYMOFII</span>
             <span>PIDLISNYI</span>
@@ -2610,7 +2600,7 @@
         <div class="profile-overlay-content">
             <div class="profile-overlay-name">
                 <h3>Tymofii "Tima" Pidlisnyi</h3>
-                <p>Product Manager & Creative Founder</p>
+                <p>AI Protocol Builder</p>
             </div>
             <div class="profile-overlay-bio">
                 <p>Hi, I'm Tima. Creator who builds.</p>
@@ -3179,8 +3169,7 @@
                 themeIcon.textContent = savedTheme === 'dark' ? '🌙' : '☀️';
             }
 
-            checkCookieConsent();
-            checkBlogBanner();
+            // Cookie consent auto-accepted (banner removed)
             loadUpvotes();
             loadComments();
         });
