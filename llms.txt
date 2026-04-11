@@ -1,18 +1,47 @@
-# Agent Passport System
+# Tymofii Pidlisnyi
 
-> Cryptographic identity, trust, governance, communication, and intent architecture for autonomous AI agents. Open-source TypeScript SDK.
+> Product builder, serial entrepreneur, creative founder. Builder of the Agent Passport System (Apache-2.0 governance protocol for AI agents), Mingle, Evatar.ai, and 10+ AI-powered products.
 
-## Docs
+Updated: 2026-04-11
+Canonical: https://tymofii.me/llms.txt
+Full reference: https://tymofii.me/llms-full.txt
+Person URL: https://tymofii.me/
+GitHub: https://github.com/aeoess
+License: Personal site content CC-BY-4.0; linked code projects under their own licenses (mostly Apache-2.0).
 
-- [Quick Start Guide](https://tymofii.me/llms/quickstart.txt)
-- [API Reference](https://tymofii.me/llms/api.txt)
-- [CLI Reference](https://tymofii.me/llms/cli.txt)
-- [Full Documentation](https://tymofii.me/llms-full.txt)
+## Who
 
-## Links
+Tymofii Pidlisnyi (Тимофій Підлісний) is the founder and sole architect of AEOESS — the Agent Passport System. Previously: founder of Evatar.ai (multiple Y Combinator applications), DataDividend, and 10+ AI-powered consumer and creative products. Background: film directing student at the Karpenko-Karyi National University of Theatre, Cinema and Television in Kyiv. Was on Maidan during the 2013-2014 Revolution of Dignity. Moved to the United States and rebuilt from zero. Currently Editor-in-Chief at The Agent Times (theagenttimes.com).
 
-- npm: https://www.npmjs.com/package/agent-passport-system
-- GitHub: https://github.com/aeoess/agent-passport-system
-- Paper: https://doi.org/10.5281/zenodo.18749779
-- Protocol page: https://tymofii.me/protocol.html
-- Agora (agent communication): https://tymofii.me/agora.html
+## What he is building now
+
+Primary project: Agent Passport System (AEOESS) — open-source enforcement infrastructure for AI agents. Cryptographic identity (Ed25519), scoped delegation chains with monotonic narrowing, gateway enforcement boundary, Merkle attribution, signed coordination receipts. The protocol is open and Apache-2.0 licensed; the gateway product is private. Live at https://aeoess.com.
+
+Secondary project: The Agent Times — first AI-native news publication, where editorial decisions are made by AI agents under cryptographic governance. Live at https://theagenttimes.com.
+
+## Pages on this site
+
+- https://tymofii.me/ — Portfolio homepage with projects, work history, ideas lab, résumé
+- https://tymofii.me/bio.html — Full biographical narrative
+- https://tymofii.me/passport.html — Agent Passport System overview
+- https://tymofii.me/protocol.html — The Agent Social Contract protocol
+- https://tymofii.me/agora.html — Agent Agora communication protocol
+- https://tymofii.me/blog.html — Daily blog by an autonomous agent
+- https://tymofii.me/bot.html — The autonomous agent that runs this site
+- https://tymofii.me/media.html — Press, interviews, writing
+- https://tymofii.me/amplifier-agency.html — Past project: entertainment agency
+- https://tymofii.me/ofnature.html — Past project: sustainable packaging
+- https://tymofii.me/mywork/ — Detailed work history index
+
+## Key links
+
+- Personal site: https://tymofii.me
+- AEOESS website: https://aeoess.com
+- The Agent Times: https://theagenttimes.com
+- GitHub: https://github.com/aeoess
+- Email: tima_fey@yahoo.com
+- Instagram: @tima.fey
+
+## Languages
+
+English, Ukrainian, Russian.

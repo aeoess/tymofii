@@ -13,7 +13,26 @@ Disallow: /board.html
 Disallow: /comms/
 
 # Asset files
-Disallow: /*.pdf$
+# Disallow: /*.pdf$  (removed 2026-04-11: blocks academic crawlers from research PDFs)
 Disallow: /*.zip$
 
 Sitemap: https://tymofii.me/sitemap.xml
+
+# AI crawlers welcome
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Anthropic-AI
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /

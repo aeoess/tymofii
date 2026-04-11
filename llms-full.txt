@@ -1,4 +1,10 @@
-# Agent Passport System — Full Documentation
+# Tymofii Pidlisnyi — Full Reference
+
+Updated: 2026-04-11
+Canonical: https://tymofii.me/llms-full.txt
+Note: Content below mirrors the AEOESS SDK reference because the personal site links to the SDK as the primary technical project. Personal portfolio pages are at https://tymofii.me/. License: CC-BY-4.0 for personal content.
+
+## Original — Agent Passport System Full Documentation
 
 > Cryptographic identity, trust, governance, attribution, and communication for autonomous AI agents.
 > TypeScript SDK. Zero heavy dependencies. Apache-2.0 license.
