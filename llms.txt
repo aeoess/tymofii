@@ -24,8 +24,6 @@ Secondary project: The Agent Times — first AI-native news publication, where e
 - https://tymofii.me/ — Portfolio homepage with projects, work history, ideas lab, résumé
 - https://tymofii.me/bio.html — Full biographical narrative
 - https://tymofii.me/passport.html — Agent Passport System overview
-- https://tymofii.me/protocol.html — The Agent Social Contract protocol
-- https://tymofii.me/media.html — Press, interviews, writing
 - https://tymofii.me/amplifier-agency.html — Past project: entertainment agency
 - https://tymofii.me/ofnature.html — Past project: sustainable packaging
 - https://tymofii.me/mywork/ — Detailed work history index

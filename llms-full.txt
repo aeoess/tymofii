@@ -51,8 +51,6 @@ His writing style avoids clickbait, em-dashes, opening filler ("strong proposal"
 - /                              Portfolio homepage
 - /bio.html                      Full biographical narrative
 - /passport.html                 Agent Passport System overview
-- /protocol.html                 The Agent Social Contract protocol
-- /media.html                    Press, interviews, writing
 - /amplifier-agency.html         Past project: entertainment agency
 - /ofnature.html                 Past project: sustainable packaging
 - /mywork/                       Detailed work history index (18 project pages)
