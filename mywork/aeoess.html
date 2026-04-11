@@ -225,37 +225,14 @@
  }
 
  .theme-toggle,
- .design-switcher {
- background: var(--bg-tertiary);
- border: 1px solid var(--border-color);
- border-radius: 100px;
- padding: 0.5rem;
- cursor: pointer;
- display: flex;
- align-items: center;
- justify-content: center;
- width: 44px;
- height: 44px;
- transition: all 0.3s ease;
- text-decoration: none;
- color: var(--text-primary);
- font-size: 1.1rem;
- }
+ 
 
  .theme-toggle:hover,
- .design-switcher:hover {
- border-color: var(--accent-primary);
- transform: scale(1.05);
- }
+ 
 
- .design-switcher {
- position: relative;
- }
+ 
 
- .design-switcher:hover {
- background: #fef3c7;
- border-color: #f59e0b;
- }
+ 
 
  .switcher-tooltip {
  position: absolute;
@@ -274,11 +251,7 @@
  box-shadow: var(--shadow-md);
  }
 
- .design-switcher:hover .switcher-tooltip {
- opacity: 1;
- }
-
- .theme-toggle svg {
+.theme-toggle svg {
  width: 20px; height: 20px;
  fill: none;
  stroke: var(--text-primary);
@@ -1058,10 +1031,7 @@
  <nav class="nav">
  <a href="index.html" class="back-link">← Back to Portfolio</a>
  <div class="nav-controls">
- <a href="aeoess_v2.html" class="design-switcher" title="Try Blueprint Design">
- 🎨
- <span class="switcher-tooltip">Blueprint Version</span>
- </a>
+ 
  <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
  <svg class="sun-icon" viewBox="0 0 24 24">
  <circle cx="12" cy="12" r="5"/>

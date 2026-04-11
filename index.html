@@ -539,73 +539,17 @@
  }
 
  /* Design Switcher Button */
- .design-switcher {
- width: 40px;
- height: 30px;
- background: var(--glass-bg);
- backdrop-filter: blur(20px);
- -webkit-backdrop-filter: blur(20px);
- border: 1px solid var(--glass-border);
- border-radius: 8px;
- cursor: pointer;
- display: flex;
- align-items: center;
- justify-content: center;
- transition: all 0.3s ease;
- font-size: 14px;
- color: var(--text-muted);
- }
+ 
 
- .design-switcher:hover {
- border-color: var(--accent-yellow);
- background: rgba(244, 208, 63, 0.1);
- color: var(--accent-yellow);
- }
+ 
 
- .design-switcher:active {
- transform: scale(0.95);
- }
+ 
 
- .design-switcher-wrapper {
- position: relative;
- }
+ 
 
- .design-switcher-tooltip {
- position: absolute;
- top: 100%;
- right: 0;
- margin-top: 8px;
- padding: 0.5rem 0.75rem;
- background: var(--glass-bg);
- backdrop-filter: blur(20px);
- -webkit-backdrop-filter: blur(20px);
- border: 1px solid var(--glass-border);
- border-radius: 8px;
- font-size: 0.75rem;
- color: var(--text-muted);
- white-space: nowrap;
- opacity: 0;
- pointer-events: none;
- transition: opacity 0.2s ease;
- }
+ 
 
- .design-switcher-wrapper:hover .design-switcher-tooltip {
- opacity: 1;
- }
-
- /* ===== ENHANCED PROJECT LINKS ===== */
- .project-links {
- display: flex;
- flex-wrap: wrap;
- gap: 0.75rem;
- margin-top: 1.25rem;
- padding-top: 1.25rem;
- border-top: 1px solid var(--glass-border);
- position: relative;
- z-index: 10;
- }
-
- .project-link {
+.project-link {
  display: inline-flex;
  align-items: center;
  gap: 0.4rem;
@@ -2491,12 +2435,7 @@
 
  <!-- ===== TOP RIGHT CONTROLS ===== -->
  <div class="top-controls">
- <div class="design-switcher-wrapper">
- <div class="design-switcher" onclick="switchDesign()" title="Switch Design">
- 🎨
- </div>
- <div class="design-switcher-tooltip">Try alternate design</div>
- </div>
+ 
  <div class="theme-toggle" onclick="toggleTheme()">
  <div class="theme-toggle-slider">
  <span id="theme-icon">🌙</span>
@@ -2591,7 +2530,7 @@
  </div>
  <div class="mobile-control-row">
  <span class="mobile-control-label">Alt Design</span>
- <div class="mobile-design-toggle" id="mobileDesignToggle" onclick="switchDesign()"></div>
+ <div class="mobile-design-toggle" id="mobileDesignToggle" onclick=""></div>
  </div>
  </div>
  </div>
@@ -2817,7 +2756,7 @@
  </div>
 
  <div class="ideas-single-box">
- <div style="padding:2rem;display:flex;flex-direction:column;gap:1.5rem">
+ <div style="padding:2rem;display:flex;flex-direction:column;gap:1.5rem;max-height:60vh;overflow-y:auto"><!-- scrollable -->
 
  <div style="border-left:2px solid var(--accent);padding-left:1.25rem">
  <div style="font-size:0.78rem;letter-spacing:0.1em;color:var(--text-muted);text-transform:uppercase;margin-bottom:0.4rem">Paper · 2026 · Zenodo</div>
@@ -3022,13 +2961,7 @@
  }
 
  // ===== DESIGN SWITCHER =====
- function switchDesign() {
- const currentPath = window.location.pathname;
- const isV2 = currentPath.includes('index_v2.html');
- 
- if (isV2) {
- window.location.href = currentPath.replace('index_v2.html', 'index.html');
- } else {
+  else {
  if (currentPath.endsWith('index.html')) {
  window.location.href = currentPath.replace('index.html', 'index_v2.html');
  } else if (currentPath.endsWith('/') || currentPath === '') {
@@ -3496,7 +3429,7 @@
  track('theme_toggle',{event_category:'ui_interaction',event_label:c==='bright'?'dark':'bright'});if(_tT)_tT.call(this);};
 
  // 10. Design Switch
- var _sD=window.switchDesign;window.switchDesign=function(){track('design_switch',{event_category:'ui_interaction',event_label:'alt_design'});if(_sD)_sD.call(this);};
+ if(_sD)_sD.call(this);};
 
  // 11. Music Toggle
  var _tM=window.toggleMusic;window.toggleMusic=function(){var b=document.getElementById('musicBtn');var ip=b&&b.textContent.trim()==='⏸';

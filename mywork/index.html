@@ -230,40 +230,11 @@
  gap: 0.75rem;
  }
 
- .design-switcher {
- background: var(--bg-tertiary);
- border: 1px solid var(--border-color);
- border-radius: 100px;
- padding: 0.5rem 1rem;
- cursor: pointer;
- display: flex;
- align-items: center;
- justify-content: center;
- gap: 0.5rem;
- font-size: 0.85rem;
- font-weight: 500;
- color: var(--text-secondary);
- text-decoration: none;
- transition: all 0.3s ease;
- white-space: nowrap;
- }
+ 
 
- .design-switcher:hover {
- border-color: var(--accent-primary);
- color: var(--accent-primary);
- transform: scale(1.05);
- }
+ 
 
- .design-switcher svg {
- width: 18px;
- height: 18px;
- fill: none;
- stroke: currentColor;
- stroke-width: 2;
- transition: stroke 0.3s ease;
- }
-
- .theme-toggle {
+.theme-toggle {
  background: var(--bg-tertiary);
  border: 1px solid var(--border-color);
  border-radius: 100px;
@@ -697,13 +668,6 @@
  <nav class="nav">
  <a href="../index.html" class="back-link">← Back to Home</a>
  <div class="nav-controls">
- <a href="/mywork/work_v2.html" class="design-switcher" aria-label="Switch design">
- <svg viewBox="0 0 24 24">
- <path d="M12 2L2 7l10 5 10-5-10-5z"/>
- <path d="M2 17l10 5 10-5M2 12l10 5 10-5"/>
- </svg>
- <span>V2</span>
- </a>
  <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
  <svg class="sun-icon" viewBox="0 0 24 24">
  <circle cx="12" cy="12" r="5"/>
