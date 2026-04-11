@@ -2528,10 +2528,7 @@
  <span class="mobile-control-label">Dark Mode</span>
  <div class="mobile-theme-toggle" id="mobileThemeToggle" onclick="toggleTheme()"></div>
  </div>
- <div class="mobile-control-row">
- <span class="mobile-control-label">Alt Design</span>
- <div class="mobile-design-toggle" id="mobileDesignToggle" onclick=""></div>
- </div>
+ 
  </div>
  </div>
 
@@ -2966,17 +2963,8 @@
  }
  }
 
- // ===== DESIGN SWITCHER =====
-  else {
- if (currentPath.endsWith('index.html')) {
- window.location.href = currentPath.replace('index.html', 'index_v2.html');
- } else if (currentPath.endsWith('/') || currentPath === '') {
- window.location.href = 'index_v2.html';
- } else {
- window.location.href = currentPath + '/index_v2.html';
- }
- }
- }
+ // (design switcher removed)
+
 
  // Theme Toggle
  function toggleTheme() {
@@ -3063,8 +3051,6 @@
  const mobileDrawer = document.getElementById('mobileDrawer');
  const mobileDrawerOverlay = document.getElementById('mobileDrawerOverlay');
  const mobileThemeToggle = document.getElementById('mobileThemeToggle');
- const mobileDesignToggle = document.getElementById('mobileDesignToggle');
-
  function toggleMobileDrawer() {
  burgerMenu.classList.toggle('active');
  mobileDrawer.classList.toggle('open');
