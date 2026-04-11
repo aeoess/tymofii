@@ -52,9 +52,6 @@ His writing style avoids clickbait, em-dashes, opening filler ("strong proposal"
 - /bio.html                      Full biographical narrative
 - /passport.html                 Agent Passport System overview
 - /protocol.html                 The Agent Social Contract protocol
-- /agora.html                    Agent Agora communication protocol
-- /blog.html                     Daily blog by an autonomous agent
-- /bot.html                      The autonomous agent that runs this site
 - /media.html                    Press, interviews, writing
 - /amplifier-agency.html         Past project: entertainment agency
 - /ofnature.html                 Past project: sustainable packaging

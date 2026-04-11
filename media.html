@@ -3,34 +3,34 @@
 <head>
 <!-- Google Analytics 4 with Consent Mode v2 — tymofii.me -->
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('consent', 'default', {
-    'analytics_storage': 'denied',
-    'ad_storage': 'denied',
-    'ad_user_data': 'denied',
-    'ad_personalization': 'denied',
-    'functionality_storage': 'granted',
-    'security_storage': 'granted',
-    'wait_for_update': 500
-  });
-  if (localStorage.getItem('cookieConsent') === 'accepted') {
-    gtag('consent', 'update', {
-      'analytics_storage': 'granted',
-      'ad_storage': 'granted',
-      'ad_user_data': 'granted',
-      'ad_personalization': 'granted'
-    });
-  }
+ window.dataLayer = window.dataLayer || [];
+ function gtag(){dataLayer.push(arguments);}
+ gtag('consent', 'default', {
+ 'analytics_storage': 'denied',
+ 'ad_storage': 'denied',
+ 'ad_user_data': 'denied',
+ 'ad_personalization': 'denied',
+ 'functionality_storage': 'granted',
+ 'security_storage': 'granted',
+ 'wait_for_update': 500
+ });
+ if (localStorage.getItem('cookieConsent') === 'accepted') {
+ gtag('consent', 'update', {
+ 'analytics_storage': 'granted',
+ 'ad_storage': 'granted',
+ 'ad_user_data': 'granted',
+ 'ad_personalization': 'granted'
+ });
+ }
 </script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-S7QVCJGMKR"></script>
 <script>
-  gtag('js', new Date());
-  gtag('config', 'G-S7QVCJGMKR', {
-    send_page_view: true,
-    cookie_flags: 'SameSite=None;Secure',
-    link_attribution: true
-  });
+ gtag('js', new Date());
+ gtag('config', 'G-S7QVCJGMKR', {
+ send_page_view: true,
+ cookie_flags: 'SameSite=None;Secure',
+ link_attribution: true
+ });
 </script>
 <meta charset="UTF-8">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -124,196 +124,196 @@ function toggleTheme(){const h=document.documentElement,t=h.dataset.theme==='lig
 <div class="grid-bg"></div>
 
 <nav>
-  <a href="/" class="nav-logo">aeoess</a>
-  <div class="nav-links">
-    <a href="/protocol.html">Protocol</a>
-    <a href="/passport.html">Passport</a>
-    <a href="/agora.html">Agora</a>
-    <a href="/media.html" style="color:var(--accent)">Media</a>
-    <a href="/blog.html">Blog</a>
-    <a href="https://github.com/aeoess/agent-passport-system">GitHub</a>
-  </div>
+ <a href="/" class="nav-logo">aeoess</a>
+ <div class="nav-links">
+ <a href="/protocol.html">Protocol</a>
+ <a href="/passport.html">Passport</a>
+ <a href="/agora.html">Agora</a>
+ <a href="/media.html" style="color:var(--accent)">Media</a>
+ <a href="/blog.html">Blog</a>
+ <a href="https://github.com/aeoess/agent-passport-system">GitHub</a>
+ </div>
 </nav>
 
 <div class="hero">
-  <div class="badge">Press · Articles · Writing</div>
-  <h1>Media &amp; <em>Coverage</em></h1>
-  <p class="hero-sub">Press coverage, published articles, and writing about AI agents, infrastructure, and the products I build.</p>
+ <div class="badge">Press · Articles · Writing</div>
+ <h1>Media &amp; <em>Coverage</em></h1>
+ <p class="hero-sub">Press coverage, published articles, and writing about AI agents, infrastructure, and the products I build.</p>
 </div>
 
 <div class="divider"></div>
 
 <!-- PRESS COVERAGE -->
 <section>
-  <span class="section-label">001 — Press Coverage</span>
-  <h2>What they're <em>writing</em></h2>
+ <span class="section-label">001 — Editorial Mentions</span>
+ <h2>What they're <em>writing</em></h2>
 
-  <div class="article-card">
-    <a href="https://theagenttimes.com/articles/agent-passport-protocol-ships-open-source-credential-system-for-autonomous-agents" target="_blank">
-      <div class="article-source">
-        <span class="tag">Press</span>
-        The Agent Times
-      </div>
-      <div class="article-title">Someone Just Shipped the Credential Layer We've All Been Missing</div>
-      <p class="article-excerpt">The Agent Passport Protocol gives every agent a cryptographic identity, delegation chains, and reputation scoring. It's open source, MIT licensed, and it addresses a $7.6 billion economy's biggest blind spot.</p>
-      <div class="article-meta">
-        <span>📅 February 19, 2026</span>
-        <span>🏷️ Infrastructure</span>
-        <span>↗ theagenttimes.com</span>
-      </div>
-    </a>
-  </div>
+ <div class="article-card">
+ <a href="https://theagenttimes.com/articles/agent-passport-protocol-ships-open-source-credential-system-for-autonomous-agents" target="_blank">
+ <div class="article-source">
+ <span class="tag">Press</span>
+ The Agent Times
+ </div>
+ <div class="article-title">Someone Just Shipped the Credential Layer We've All Been Missing</div>
+ <p class="article-excerpt">The Agent Passport Protocol gives every agent a cryptographic identity, delegation chains, and reputation scoring. It's open source, Apache-2.0 licensed, and it addresses a $7.6 billion economy's biggest blind spot.</p>
+ <div class="article-meta">
+ <span>📅 February 19, 2026</span>
+ <span>🏷️ Infrastructure</span>
+ <span>↗ theagenttimes.com</span>
+ </div>
+ </a>
+ </div>
 </section>
 
 <div class="divider"></div>
 
 <!-- BLOG HIGHLIGHTS -->
 <section>
-  <span class="section-label">002 — Blog</span>
-  <h2>Dev log &amp; <em>thinking</em></h2>
+ <span class="section-label">002 — Blog</span>
+ <h2>Dev log &amp; <em>thinking</em></h2>
 
-  <div class="blog-list">
-    <a href="/blog.html" class="blog-item">
-      <div class="blog-item-left">
-        <div class="blog-item-title">Paper: The Agent Social Contract</div>
-        <div class="blog-item-date">February 20, 2026</div>
-      </div>
-      <span class="blog-item-arrow">→</span>
-    </a>
-    <a href="/blog.html" class="blog-item">
-      <div class="blog-item-left">
-        <div class="blog-item-title">Agent Passport v1.1: From Identity to Accountability</div>
-        <div class="blog-item-date">February 20, 2026</div>
-      </div>
-      <span class="blog-item-arrow">→</span>
-    </a>
-    <a href="/blog.html" class="blog-item">
-      <div class="blog-item-left">
-        <div class="blog-item-title">Agent Passport System: Cryptographic Identity for AI Agents</div>
-        <div class="blog-item-date">February 18, 2026</div>
-      </div>
-      <span class="blog-item-arrow">→</span>
-    </a>
-    <a href="/blog.html" class="blog-item">
-      <div class="blog-item-left">
-        <div class="blog-item-title">The Speed of Wrong vs The Speed of Right</div>
-        <div class="blog-item-date">February 17, 2026</div>
-      </div>
-      <span class="blog-item-arrow">→</span>
-    </a>
-    <a href="/blog.html" class="blog-item">
-      <div class="blog-item-left">
-        <div class="blog-item-title">The Art of Seeing Signals</div>
-        <div class="blog-item-date">February 16, 2026</div>
-      </div>
-      <span class="blog-item-arrow">→</span>
-    </a>
-    <a href="/blog.html" class="blog-item">
-      <div class="blog-item-left">
-        <div class="blog-item-title">The Agent Security Wave is Here</div>
-        <div class="blog-item-date">February 16, 2026</div>
-      </div>
-      <span class="blog-item-arrow">→</span>
-    </a>
-    <a href="/blog.html" class="blog-item">
-      <div class="blog-item-left">
-        <div class="blog-item-title">Context Windows Are Infrastructure</div>
-        <div class="blog-item-date">February 15, 2026</div>
-      </div>
-      <span class="blog-item-arrow">→</span>
-    </a>
-    <a href="/blog.html" class="blog-item">
-      <div class="blog-item-left">
-        <div class="blog-item-title">Remote Control is the New Desktop</div>
-        <div class="blog-item-date">February 14, 2026</div>
-      </div>
-      <span class="blog-item-arrow">→</span>
-    </a>
-  </div>
+ <div class="blog-list">
+ <a href="/blog.html" class="blog-item">
+ <div class="blog-item-left">
+ <div class="blog-item-title">Paper: The Agent Social Contract</div>
+ <div class="blog-item-date">February 20, 2026</div>
+ </div>
+ <span class="blog-item-arrow">→</span>
+ </a>
+ <a href="/blog.html" class="blog-item">
+ <div class="blog-item-left">
+ <div class="blog-item-title">Agent Passport v1.1: From Identity to Accountability</div>
+ <div class="blog-item-date">February 20, 2026</div>
+ </div>
+ <span class="blog-item-arrow">→</span>
+ </a>
+ <a href="/blog.html" class="blog-item">
+ <div class="blog-item-left">
+ <div class="blog-item-title">Agent Passport System: Cryptographic Identity for AI Agents</div>
+ <div class="blog-item-date">February 18, 2026</div>
+ </div>
+ <span class="blog-item-arrow">→</span>
+ </a>
+ <a href="/blog.html" class="blog-item">
+ <div class="blog-item-left">
+ <div class="blog-item-title">The Speed of Wrong vs The Speed of Right</div>
+ <div class="blog-item-date">February 17, 2026</div>
+ </div>
+ <span class="blog-item-arrow">→</span>
+ </a>
+ <a href="/blog.html" class="blog-item">
+ <div class="blog-item-left">
+ <div class="blog-item-title">The Art of Seeing Signals</div>
+ <div class="blog-item-date">February 16, 2026</div>
+ </div>
+ <span class="blog-item-arrow">→</span>
+ </a>
+ <a href="/blog.html" class="blog-item">
+ <div class="blog-item-left">
+ <div class="blog-item-title">The Agent Security Wave is Here</div>
+ <div class="blog-item-date">February 16, 2026</div>
+ </div>
+ <span class="blog-item-arrow">→</span>
+ </a>
+ <a href="/blog.html" class="blog-item">
+ <div class="blog-item-left">
+ <div class="blog-item-title">Context Windows Are Infrastructure</div>
+ <div class="blog-item-date">February 15, 2026</div>
+ </div>
+ <span class="blog-item-arrow">→</span>
+ </a>
+ <a href="/blog.html" class="blog-item">
+ <div class="blog-item-left">
+ <div class="blog-item-title">Remote Control is the New Desktop</div>
+ <div class="blog-item-date">February 14, 2026</div>
+ </div>
+ <span class="blog-item-arrow">→</span>
+ </a>
+ </div>
 
-  <div style="text-align:center;margin-top:1.5rem">
-    <a href="/blog.html" class="btn btn-ghost" style="font-size:.7rem">View Full Blog →</a>
-  </div>
+ <div style="text-align:center;margin-top:1.5rem">
+ <a href="/blog.html" class="btn btn-ghost" style="font-size:.7rem">View Full Blog →</a>
+ </div>
 </section>
 
 <div class="divider"></div>
 
 <!-- SUBSTACK -->
 <section>
-  <span class="section-label">003 — Substack</span>
-  <h2>Newsletter &amp; <em>essays</em></h2>
+ <span class="section-label">003 — Substack</span>
+ <h2>Newsletter &amp; <em>essays</em></h2>
 
-  <div class="substack-cta">
-    <h3>timafey on Substack</h3>
-    <p>Longer-form writing about building products, AI agents, startup life, and the creative process.</p>
-    <a href="https://timafey.substack.com" target="_blank" class="btn">Read on Substack →</a>
-  </div>
+ <div class="substack-cta">
+ <h3>timafey on Substack</h3>
+ <p>Longer-form writing about building products, AI agents, startup life, and the creative process.</p>
+ <a href="https://timafey.substack.com" target="_blank" class="btn">Read on Substack →</a>
+ </div>
 </section>
 
 <div class="divider"></div>
 
 <!-- PUBLISHED RESEARCH -->
 <section>
-  <span class="section-label">004 — Research</span>
-  <h2>Published <em>papers</em></h2>
+ <span class="section-label">004 — Research</span>
+ <h2>Published <em>papers</em></h2>
 
-  <div class="article-card">
-    <a href="https://github.com/aeoess/agent-passport-system/blob/main/papers/agent-social-contract.md" target="_blank">
-      <div class="article-source">
-        <span class="tag">Paper</span>
-        GitHub · aeoess/agent-passport-system
-      </div>
-      <div class="article-title">The Agent Social Contract</div>
-      <p class="article-excerpt">Cryptographic Identity, Ethical Governance, and Beneficiary Economics for Autonomous AI Agents. Three layers in one protocol: Agent Passport, Human Values Floor, and Beneficiary Attribution. Co-authored with Claude.</p>
-      <div class="article-meta">
-        <span>📅 February 20, 2026</span>
-        <span>🏷️ Research</span>
-        <span>📄 Open Source</span>
-      </div>
-    </a>
-  </div>
+ <div class="article-card">
+ <a href="https://github.com/aeoess/agent-passport-system/blob/main/papers/agent-social-contract.md" target="_blank">
+ <div class="article-source">
+ <span class="tag">Paper</span>
+ GitHub · aeoess/agent-passport-system
+ </div>
+ <div class="article-title">The Agent Social Contract</div>
+ <p class="article-excerpt">Cryptographic Identity, Ethical Governance, and Beneficiary Economics for Autonomous AI Agents. Three layers in one protocol: Agent Passport, Human Values Floor, and Beneficiary Attribution. Co-authored with Claude.</p>
+ <div class="article-meta">
+ <span>📅 February 20, 2026</span>
+ <span>🏷️ Research</span>
+ <span>📄 Open Source</span>
+ </div>
+ </a>
+ </div>
 </section>
 
 <footer>
-  <p>Media &amp; Coverage · <a href="/">tymofii.me</a> · Built by <a href="/">Tymofii Pidlisnyi</a> · 2026</p>
+ <p>Media &amp; Coverage · <a href="/">tymofii.me</a> · Built by <a href="/">Tymofii Pidlisnyi</a> · 2026</p>
 </footer>
 
 <script>
 (function(){
-  var pagePath='/media.html';
-  function track(n,p){if(typeof gtag==='function'){p=p||{};p.page_path=pagePath;gtag('event',n,p);}}
-  var scrollMilestones={25:false,50:false,75:false,90:false,100:false};
-  window.addEventListener('scroll',function(){
-    var s=Math.round((window.scrollY/(document.documentElement.scrollHeight-window.innerHeight))*100);
-    [25,50,75,90,100].forEach(function(m){if(s>=m&&!scrollMilestones[m]){scrollMilestones[m]=true;track('scroll_depth',{event_category:'engagement',event_label:m+'%',value:m});}});
-  });
-  document.addEventListener('click',function(e){
-    var a=e.target.closest('a');
-    if(a&&a.hostname&&a.hostname!==location.hostname){
-      track('outbound_click',{event_category:'navigation',event_label:a.href,transport_type:'beacon'});
-    }
-  });
-  document.querySelectorAll('a[href]').forEach(function(a){
-    var h=a.getAttribute('href');
-    if(h&&(h.endsWith('.html')||h.startsWith('#')||h==='/'))
-      a.addEventListener('click',function(){track('internal_navigation',{event_category:'navigation',event_label:h,from_page:pagePath});});
-  });
-  var startTime=Date.now(),activeTime=0,lastActive=Date.now(),isActive=true,maxScroll=0;
-  function updateActive(){if(isActive)activeTime+=Date.now()-lastActive;lastActive=Date.now();}
-  document.addEventListener('visibilitychange',function(){updateActive();isActive=!document.hidden;lastActive=Date.now();});
-  window.addEventListener('scroll',function(){var s=Math.round((window.scrollY/(document.documentElement.scrollHeight-window.innerHeight))*100);if(s>maxScroll)maxScroll=s;});
-  function sendEngagement(){updateActive();track('page_engagement',{event_category:'engagement',active_time_seconds:Math.round(activeTime/1000),total_time_seconds:Math.round((Date.now()-startTime)/1000),max_scroll_depth:maxScroll});}
-  window.addEventListener('beforeunload',sendEngagement);
-  document.addEventListener('visibilitychange',function(){if(document.hidden)sendEngagement();});
-  window.addEventListener('load',function(){
-    setTimeout(function(){
-      var n=performance.getEntriesByType('navigation')[0];
-      if(n){track('page_performance',{event_category:'performance',load_time_ms:Math.round(n.loadEventEnd-n.startTime),ttfb_ms:Math.round(n.responseStart-n.startTime)});}
-    },100);
-  });
-  var w=window.innerWidth;
-  track('device_context',{event_category:'technical',device_type:w<768?'mobile':w<1024?'tablet':'desktop',viewport_width:w});
-  console.log('aeoess-analytics media page tracking active');
+ var pagePath='/media.html';
+ function track(n,p){if(typeof gtag==='function'){p=p||{};p.page_path=pagePath;gtag('event',n,p);}}
+ var scrollMilestones={25:false,50:false,75:false,90:false,100:false};
+ window.addEventListener('scroll',function(){
+ var s=Math.round((window.scrollY/(document.documentElement.scrollHeight-window.innerHeight))*100);
+ [25,50,75,90,100].forEach(function(m){if(s>=m&&!scrollMilestones[m]){scrollMilestones[m]=true;track('scroll_depth',{event_category:'engagement',event_label:m+'%',value:m});}});
+ });
+ document.addEventListener('click',function(e){
+ var a=e.target.closest('a');
+ if(a&&a.hostname&&a.hostname!==location.hostname){
+ track('outbound_click',{event_category:'navigation',event_label:a.href,transport_type:'beacon'});
+ }
+ });
+ document.querySelectorAll('a[href]').forEach(function(a){
+ var h=a.getAttribute('href');
+ if(h&&(h.endsWith('.html')||h.startsWith('#')||h==='/'))
+ a.addEventListener('click',function(){track('internal_navigation',{event_category:'navigation',event_label:h,from_page:pagePath});});
+ });
+ var startTime=Date.now(),activeTime=0,lastActive=Date.now(),isActive=true,maxScroll=0;
+ function updateActive(){if(isActive)activeTime+=Date.now()-lastActive;lastActive=Date.now();}
+ document.addEventListener('visibilitychange',function(){updateActive();isActive=!document.hidden;lastActive=Date.now();});
+ window.addEventListener('scroll',function(){var s=Math.round((window.scrollY/(document.documentElement.scrollHeight-window.innerHeight))*100);if(s>maxScroll)maxScroll=s;});
+ function sendEngagement(){updateActive();track('page_engagement',{event_category:'engagement',active_time_seconds:Math.round(activeTime/1000),total_time_seconds:Math.round((Date.now()-startTime)/1000),max_scroll_depth:maxScroll});}
+ window.addEventListener('beforeunload',sendEngagement);
+ document.addEventListener('visibilitychange',function(){if(document.hidden)sendEngagement();});
+ window.addEventListener('load',function(){
+ setTimeout(function(){
+ var n=performance.getEntriesByType('navigation')[0];
+ if(n){track('page_performance',{event_category:'performance',load_time_ms:Math.round(n.loadEventEnd-n.startTime),ttfb_ms:Math.round(n.responseStart-n.startTime)});}
+ },100);
+ });
+ var w=window.innerWidth;
+ track('device_context',{event_category:'technical',device_type:w<768?'mobile':w<1024?'tablet':'desktop',viewport_width:w});
+ console.log('aeoess-analytics media page tracking active');
 })();
 </script>
 </body>
