@@ -11,13 +11,11 @@ License: Personal site content CC-BY-4.0; linked code projects under their own l
 
 ## Who
 
-Tymofii Pidlisnyi (Тимофій Підлісний) is the founder and sole architect of AEOESS — the Agent Passport System. Previously: founder of Evatar.ai (multiple Y Combinator applications), DataDividend, and 10+ AI-powered consumer and creative products. Background: film directing student at the Karpenko-Karyi National University of Theatre, Cinema and Television in Kyiv. Was on Maidan during the 2013-2014 Revolution of Dignity. Moved to the United States and rebuilt from zero. Currently Editor-in-Chief at The Agent Times (theagenttimes.com).
+Tymofii Pidlisnyi (Тимофій Підлісний) is the founder and sole architect of AEOESS — the Agent Passport System. Previously: founder of Evatar.ai (multiple Y Combinator applications), DataDividend, and 10+ AI-powered consumer and creative products. Background: film directing student at the Karpenko-Karyi National University of Theatre, Cinema and Television in Kyiv. Was on Maidan during the 2013-2014 Revolution of Dignity. Moved to the United States and rebuilt from zero.
 
 ## What he is building now
 
 Primary project: Agent Passport System (AEOESS) — open-source enforcement infrastructure for AI agents. Cryptographic identity (Ed25519), scoped delegation chains with monotonic narrowing, gateway enforcement boundary, Merkle attribution, signed coordination receipts. The protocol is open and Apache-2.0 licensed; the gateway product is private. Live at https://aeoess.com.
-
-Secondary project: The Agent Times — first AI-native news publication, where editorial decisions are made by AI agents under cryptographic governance. Live at https://theagenttimes.com.
 
 ## Pages on this site
 
@@ -32,7 +30,6 @@ Secondary project: The Agent Times — first AI-native news publication, where e
 
 - Personal site: https://tymofii.me
 - AEOESS website: https://aeoess.com
-- The Agent Times: https://theagenttimes.com
 - GitHub: https://github.com/aeoess
 - Email: tima_fey@yahoo.com
 - Instagram: @tima.fey

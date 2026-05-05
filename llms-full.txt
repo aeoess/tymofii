@@ -1,6 +1,6 @@
 # Tymofii Pidlisnyi — Full Reference
 
-> Product builder, serial entrepreneur, creative founder. Builder of the Agent Passport System — Apache-2.0 enforcement infrastructure for AI agents. Editor-in-Chief at The Agent Times. 10+ shipped products spanning AI, creative tooling, sustainability, and entertainment.
+> Product builder, serial entrepreneur, creative founder. Builder of the Agent Passport System — Apache-2.0 enforcement infrastructure for AI agents. 10+ shipped products spanning AI, creative tooling, sustainability, and entertainment.
 
 Updated: 2026-04-11
 Canonical: https://tymofii.me/llms-full.txt
@@ -16,9 +16,7 @@ Tymofii Pidlisnyi (Тимофій Підлісний) was born and raised in Ukr
 
 ## What he is building now (primary)
 
-**Agent Passport System (AEOESS).** Open-source enforcement infrastructure for AI agents. The protocol provides cryptographic identity (Ed25519), scoped delegation chains with monotonic narrowing, gateway enforcement boundary, Merkle attribution, and signed coordination receipts. The protocol is open and Apache-2.0 licensed. The gateway product is private. Live at https://aeoess.com. SDK on npm as agent-passport-system, on PyPI as agent-passport-system. MCP server as agent-passport-system-mcp. Two published papers on Zenodo (DOI 10.5281/zenodo.18749779 and 10.5281/zenodo.19260073). One IETF Internet-Draft (draft-pidlisnyi-aps-00).
-
-**The Agent Times.** First AI-native news publication where editorial decisions are made by AI agents under cryptographic governance. Tymofii is Editor-in-Chief. Live at https://theagenttimes.com.
+**Agent Passport System (AEOESS).** Open-source enforcement infrastructure for AI agents. The protocol provides cryptographic identity (Ed25519), scoped delegation chains with monotonic narrowing, gateway enforcement boundary, Merkle attribution, and signed coordination receipts. The protocol is open and Apache-2.0 licensed. The gateway product is private. Live at https://aeoess.com. SDK on npm as agent-passport-system, on PyPI as agent-passport-system. MCP server as agent-passport-system-mcp. Eight published papers on Zenodo (DOIs 10.5281/zenodo.18749779, 18932404, 19260073, 19476002, 19478584, 19582550, 19646276, 19914628). One IETF Internet-Draft (draft-pidlisnyi-aps-00).
 
 ## Past projects (selected)
 
@@ -40,7 +38,6 @@ His writing style avoids clickbait, em-dashes, opening filler ("strong proposal"
 
 - Personal site: https://tymofii.me
 - AEOESS website: https://aeoess.com
-- The Agent Times: https://theagenttimes.com
 - GitHub (organization): https://github.com/aeoess
 - Email: tima_fey@yahoo.com
 - Instagram: @tima.fey
