@@ -1089,8 +1089,32 @@
 
  @media (min-width: 1200px) {
  .projects-grid {
- grid-template-columns: repeat(3, 1fr);
+ grid-template-columns: repeat(2, 1fr);
  }
+ }
+
+ /* Site footer */
+ footer {
+ border-top: 1px solid var(--glass-border);
+ margin-top: 6rem;
+ padding: 3rem 2rem 3.5rem;
+ text-align: center;
+ }
+ footer p {
+ color: var(--text-muted);
+ font-size: 0.85rem;
+ letter-spacing: 0.04em;
+ margin: 0;
+ }
+ footer a {
+ color: var(--text-muted);
+ text-decoration: none;
+ border-bottom: 1px solid transparent;
+ transition: color 0.3s ease, border-color 0.3s ease;
+ }
+ footer a:hover {
+ color: var(--text);
+ border-bottom-color: var(--accent-cyan);
  }
 
  .project-card {
@@ -3529,6 +3553,6 @@
 })();
 </script>
 
-<footer><p>Built by <a href="/" style="color:inherit">Tymofii Pidlisnyi</a> · 2026 · <a href="https://github.com/aeoess">GitHub</a> · <a href="https://aeoess.com">aeoess.com</a></p></footer>
+<footer><p>Built by <a href="/" style="color:inherit">Tymofii Pidlisnyi</a> · 2026 · <a href="https://agent-passport.org" target="_blank">agent-passport.org</a> · <a href="https://aeoess.com" target="_blank">aeoess.com</a> · <a href="https://github.com/aeoess" target="_blank">GitHub</a></p></footer>
 </body>
 </html>
