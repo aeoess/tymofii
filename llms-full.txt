@@ -16,7 +16,7 @@ Tymofii Pidlisnyi (Тимофій Підлісний) was born and raised in Ukr
 
 ## What he is building now (primary)
 
-**Agent Passport System (AEOESS).** Open-source enforcement infrastructure for AI agents. The protocol provides cryptographic identity (Ed25519), scoped delegation chains with monotonic narrowing, gateway enforcement boundary, Merkle attribution, and signed coordination receipts. The protocol is open and Apache-2.0 licensed. The gateway product is private. Live at https://aeoess.com. SDK on npm as agent-passport-system, on PyPI as agent-passport-system. MCP server as agent-passport-system-mcp. Eight published papers on Zenodo (DOIs 10.5281/zenodo.18749779, 18932404, 19260073, 19476002, 19478584, 19582550, 19646276, 19914628). One IETF Internet-Draft (draft-pidlisnyi-aps-00).
+**Agent Passport System (AEOESS).** Open-source enforcement infrastructure for AI agents. The protocol provides cryptographic identity (Ed25519), scoped delegation chains with monotonic narrowing, gateway enforcement boundary, Merkle attribution, and signed coordination receipts. The protocol is open and Apache-2.0 licensed. The gateway product is private. Live at https://aeoess.com. SDK on npm as agent-passport-system, on PyPI as agent-passport-system. MCP server as agent-passport-system-mcp. Nine published papers on Zenodo (DOIs 10.5281/zenodo.18749779, 18932404, 19260073, 19476002, 19478584, 19582550, 19646276, 19914628, 21208555). One IETF Internet-Draft (draft-pidlisnyi-aps-02).
 
 ## Past projects (selected)
 
