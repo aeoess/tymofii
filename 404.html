@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>404 · Page not found | Tymofii Pidlisnyi</title>
+<meta name="description" content="Page not found. Links to the homepage, résumé, and the Agent Passport System.">
+<link rel="canonical" href="https://tymofii.me/404.html">
+<meta name="robots" content="noindex">
+<meta property="og:title" content="404 · Page not found | Tymofii Pidlisnyi">
+<meta property="og:description" content="Page not found. Links to the homepage, résumé, and the Agent Passport System.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://tymofii.me/404.html">
+<meta name="twitter:card" content="summary">
+<link rel="icon" type="image/png" sizes="500x500" href="/assets/images/aeoess_logo.png">
+<link rel="apple-touch-icon" href="/assets/images/aeoess_logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --bg: #0F0E0D;
+  --bg-secondary: #1A1715;
+  --text: #F5F3F0;
+  --text-muted: #8B9199;
+  --border: #262320;
+  --accent-cyan: #5DADE2;
+  --accent-yellow: #F4D03F;
+  --glass-bg: rgba(26, 23, 21, 0.5);
+  --glass-border: rgba(255, 255, 255, 0.06);
+  --glass-border-hover: rgba(93, 173, 226, 0.2);
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.floating-orb {
+  position: fixed;
+  border-radius: 50%;
+  filter: blur(90px);
+  opacity: 0.16;
+  pointer-events: none;
+  z-index: 0;
+}
+.orb-1 { width: 380px; height: 380px; background: var(--accent-cyan); top: 8%; left: -8%; }
+.orb-2 { width: 420px; height: 420px; background: var(--accent-yellow); bottom: 4%; right: -10%; }
+
+.logo-container {
+  position: fixed;
+  top: 2rem;
+  left: 2rem;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.profile-photo {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 2px solid var(--border);
+  object-fit: cover;
+}
+.logo {
+  font-size: 1.05rem;
+  letter-spacing: 0.2em;
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 500;
+  line-height: 1.3;
+  display: flex;
+  flex-direction: column;
+  transition: color 0.3s ease;
+}
+.logo:hover { color: var(--accent-cyan); }
+
+main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8rem 2rem 4rem;
+  position: relative;
+  z-index: 2;
+}
+
+.wrap { max-width: 620px; text-align: center; }
+
+.eyebrow {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--accent-cyan);
+  margin-bottom: 1.5rem;
+}
+
+h1 {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(4rem, 12vw, 7rem);
+  font-weight: 500;
+  line-height: 1;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, var(--accent-cyan), var(--accent-yellow));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.dek {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  margin-bottom: 2.5rem;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+.link-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.7rem 1.3rem;
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+  border-radius: 8px;
+  color: var(--text);
+  text-decoration: none;
+  font-size: 0.88rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+.link-btn:hover {
+  border-color: var(--glass-border-hover);
+  background: var(--accent-cyan);
+  color: var(--bg);
+  transform: translateY(-2px);
+}
+.link-btn.primary {
+  background: linear-gradient(135deg, var(--accent-cyan), #3498DB);
+  color: #0F0E0D;
+  border-color: transparent;
+}
+.link-btn.primary:hover {
+  box-shadow: 0 6px 20px rgba(93, 173, 226, 0.35);
+  color: #0F0E0D;
+}
+
+footer {
+  position: relative;
+  z-index: 2;
+  padding: 2rem;
+  text-align: center;
+}
+footer p {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+footer a { color: inherit; text-decoration: underline; }
+
+@media (max-width: 640px) {
+  .logo-container { top: 1.25rem; left: 1.25rem; }
+  .profile-photo { width: 44px; height: 44px; }
+  .logo { font-size: 0.85rem; letter-spacing: 0.15em; }
+  main { padding: 7rem 1.25rem 3rem; }
+}
+</style>
+</head>
+<body>
+<div class="floating-orb orb-1"></div>
+<div class="floating-orb orb-2"></div>
+
+<div class="logo-container">
+  <a href="/"><img src="/assets/images/my_photo.jpg" alt="Tymofii Pidlisnyi" class="profile-photo" width="56" height="56" loading="eager"></a>
+  <a class="logo" href="/">
+    <span>TYMOFII</span>
+    <span>PIDLISNYI</span>
+  </a>
+</div>
+
+<main>
+  <div class="wrap">
+    <div class="eyebrow">Error 404</div>
+    <h1>404</h1>
+    <p class="dek">This page doesn't exist or moved.</p>
+    <div class="links">
+      <a class="link-btn primary" href="/">Home</a>
+      <a class="link-btn" href="/mywork/index.html">Résumé</a>
+      <a class="link-btn" href="/bio.html">Bio</a>
+      <a class="link-btn" href="https://agent-passport.org" target="_blank" rel="noopener">Agent Passport System ↗</a>
+      <a class="link-btn" href="https://github.com/aeoess" target="_blank" rel="noopener">GitHub ↗</a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <p>Built by <a href="/">Tymofii Pidlisnyi</a> · 2026 · <a href="https://agent-passport.org" target="_blank" rel="noopener">agent-passport.org</a> · <a href="https://aeoess.com" target="_blank" rel="noopener">aeoess.com</a> · <a href="https://github.com/aeoess" target="_blank" rel="noopener">GitHub</a></p>
+</footer>
+</body>
+</html>
