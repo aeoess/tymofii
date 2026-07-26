@@ -31,7 +31,7 @@ Primary project: Agent Passport System (AEOESS) — open-source enforcement infr
 - Personal site: https://tymofii.me
 - AEOESS website: https://aeoess.com
 - GitHub: https://github.com/aeoess
-- Email: tima_fey@yahoo.com
+- Email: tima@aeoess.com
 - Instagram: @tima.fey
 
 ## Languages

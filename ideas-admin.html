@@ -331,21 +331,10 @@
     </style>
 </head>
 <body>
-    <!-- Login Screen -->
-    <div id="loginScreen" class="login-screen">
-        <div class="login-box">
-            <h1>🔐 Ideas Lab</h1>
-            <input type="password" id="passwordInput" placeholder="Enter password" />
-            <button onclick="checkPassword()">Login</button>
-            <div id="errorMessage" class="error-message"></div>
-        </div>
-    </div>
-
     <!-- Main Content -->
-    <div id="mainContent" class="container hidden">
+    <div id="mainContent" class="container">
         <header>
             <h1>💡 Ideas Lab Admin</h1>
-            <button class="btn" onclick="logout()">Logout</button>
         </header>
 
         <!-- Add Idea Form -->
@@ -387,46 +376,8 @@
     </div>
 
     <script>
-        // Password (you can change this)
-        const PASSWORD = "tima2024";
-
-        // Check if already logged in
-        if (sessionStorage.getItem('loggedIn') === 'true') {
-            showMainContent();
-        }
-
-        function checkPassword() {
-            const input = document.getElementById('passwordInput').value;
-            const errorDiv = document.getElementById('errorMessage');
-            
-            if (input === PASSWORD) {
-                sessionStorage.setItem('loggedIn', 'true');
-                showMainContent();
-            } else {
-                errorDiv.textContent = 'Incorrect password';
-                setTimeout(() => errorDiv.textContent = '', 3000);
-            }
-        }
-
-        function showMainContent() {
-            document.getElementById('loginScreen').classList.add('hidden');
-            document.getElementById('mainContent').classList.remove('hidden');
-            loadIdeas();
-        }
-
-        function logout() {
-            sessionStorage.removeItem('loggedIn');
-            document.getElementById('loginScreen').classList.remove('hidden');
-            document.getElementById('mainContent').classList.add('hidden');
-            document.getElementById('passwordInput').value = '';
-        }
-
-        // Enter key to login
-        document.getElementById('passwordInput')?.addEventListener('keypress', function(e) {
-            if (e.key === 'Enter') {
-                checkPassword();
-            }
-        });
+        // Ideas entered here are stored only in this browser's localStorage and are never sent to a server.
+        loadIdeas();
 
         // Ideas management
         let ideas = JSON.parse(localStorage.getItem('ideas') || '[]');

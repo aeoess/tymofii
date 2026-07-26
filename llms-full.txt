@@ -8,7 +8,7 @@ Compact: https://tymofii.me/llms.txt
 License: CC-BY-4.0 (personal site content); linked code projects under their own licenses (mostly Apache-2.0).
 Person URL: https://tymofii.me/
 GitHub: https://github.com/aeoess
-Email: tima_fey@yahoo.com
+Email: tima@aeoess.com
 
 ## Background
 
@@ -39,7 +39,7 @@ His writing style avoids clickbait, em-dashes, opening filler ("strong proposal"
 - Personal site: https://tymofii.me
 - AEOESS website: https://aeoess.com
 - GitHub (organization): https://github.com/aeoess
-- Email: tima_fey@yahoo.com
+- Email: tima@aeoess.com
 - Instagram: @tima.fey
 - SoundCloud: tima837
 
