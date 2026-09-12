@@ -2436,7 +2436,25 @@
  grid-template-columns: repeat(3, 1fr) !important;
  }
  }
- </style>
+  /* card copy: one thought per paragraph, first line is the hook */
+ .project-card p,
+ .lab-card p {
+ margin: 0;
+ }
+ .project-card p + p,
+ .lab-card p + p {
+ margin-top: 0.7em;
+ }
+ .project-card h3 + p,
+ .lab-card h4 + p {
+ color: var(--text);
+ font-weight: 500;
+ }
+ .project-card p:last-of-type,
+ .lab-card p:last-of-type {
+ margin-bottom: 1.25em;
+ }
+</style>
 </head>
 
 <body data-theme="dark">
