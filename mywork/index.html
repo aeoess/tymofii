@@ -707,22 +707,20 @@
  <div class="job-header">
  <div class="job-title-group">
  <h3><a href="https://agent-passport.org" target="_blank">Agent Passport System</a></h3>
- <div class="job-role">Founder & Product Lead • Los Angeles, CA</div>
+ <div class="job-role">Founder & AI Engineer • Los Angeles, CA</div>
  </div>
  </div>
- <p class="job-description">An open-source protocol for developers to identify AI agents, control delegated permissions, and audit actions through signed records. It checks authority before execution and leaves a signed receipt after. Apache 2.0, SDKs in four languages, an IETF Internet-Draft, and nine papers on agent governance.</p>
+ <p class="job-description">Built open-source infrastructure for AI agents covering identity, delegated authority, policy enforcement and verifiable action evidence.</p>
  <ul class="job-highlights">
- <li>Framed APS around three problems: identify the agent, bound its authority, prove each action, mapping each to OAuth 2.0 token exchange (RFC 8693)</li>
- <li>Designed scoped delegation with monotonic narrowing: authority can only shrink as it is handed down, never grow</li>
- <li>Separated the open protocol and tooling (spec, SDKs, conformance) from the enforcement gateway so teams can adopt without deploying it</li>
- <li>Shipped TypeScript, Python, Go and Rust SDKs, an MCP server, a policy gateway, a registry, and a cross-language conformance suite</li>
+ <li>Shipped TypeScript, Python, Go and Rust SDKs, an MCP server (150+ tools), policy gateway, registry, and cross-language conformance suite</li>
+ <li>Designed scoped delegation with monotonic narrowing, mapping OAuth 2.0 token-exchange (RFC 8693) semantics onto agent authority</li>
  <li>Implemented issuance, key rotation, revocation, and a Merkle-committed receipt ledger with Ed25519 inclusion proofs and offline verification</li>
- <li>Reached 50,000+ SDK installs and 3,300+ registered agents through open-source distribution, with no paid acquisition</li>
- <li>Established Agent Authority Conformance as a Linux Foundation Decentralized Trust lab and authored the IETF Internet-Draft draft-pidlisnyi-aps</li>
- <li>Landed three merged PRs in Microsoft's Agent Governance Toolkit, where APS is cited as prior art in an architecture decision record</li>
- <li>Reviewer and contributor to OWASP Agentic Skills Top 10; upstream PRs across the MCP and A2A ecosystems, including AAIF's goose</li>
+ <li>Built an OAuth ID-JAG (draft-04) adapter mapping external IdP identity assertions onto scoped, revocable agent delegations</li>
+ <li>Scaled to 50,000+ SDK installs and 3,300+ registered agents through open-source distribution</li>
+ <li>Landed 3 merged PRs in Microsoft's Agent Governance Toolkit; APS cited as prior art in a governance architecture decision record</li>
+ <li>Merged contributions in OWASP Agentic Skills Top 10; upstream PRs across the MCP and A2A ecosystems, including AAIF's goose</li>
  <li>Active in standards working groups across OpenID AuthZEN, OpenTelemetry, W3C AI Agent Protocol CG, and OASIS CoSAI</li>
- <li>Shipped Mingle, introductions through your agent: exact-content approval on every write, contact released only when both sides choose to share</li>
+ <li>Authored an IETF Internet-Draft and established Agent Authority Conformance under Linux Foundation Decentralized Trust</li>
  </ul>
  <div class="job-links">
  <a href="https://agent-passport.org" target="_blank" class="job-link primary">Protocol site →</a>
