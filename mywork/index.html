@@ -35,14 +35,14 @@
  });
 </script>
 
- <title>Work History & Résumé — Tymofii Pidlisnyi | Product Manager</title>
+ <title>Work History | Tymofii Pidlisnyi, Founder and Protocol Builder</title>
  <!-- SEO Meta Tags -->
  <meta name="description" content="Professional timeline of Tymofii Pidlisnyi. From building the Agent Passport System, an open protocol for AI agent authority, to building Evatar.ai, scaling Elegatto to $3M ARR, and driving Series A at Allset.">
  <link rel="canonical" href="https://tymofii.me/mywork/index.html">
  <meta name="author" content="Tymofii Pidlisnyi">
  
  <!-- Open Graph -->
- <meta property="og:title" content="Work History & Résumé — Tymofii Pidlisnyi | Product Manager">
+ <meta property="og:title" content="Work History | Tymofii Pidlisnyi, Founder and Protocol Builder">
  <meta property="og:description" content="Professional timeline of Tymofii Pidlisnyi. From building the Agent Passport System, an open protocol for AI agent authority, to building Evatar.ai, scaling Elegatto to $3M ARR, and driving Series A at Allset.">
  <meta property="og:type" content="profile">
  <meta property="og:url" content="https://tymofii.me/mywork/index.html">
@@ -52,7 +52,7 @@
  
  <!-- Twitter Card -->
  <meta name="twitter:card" content="summary_large_image">
- <meta name="twitter:title" content="Work History & Résumé — Tymofii Pidlisnyi | Product Manager">
+ <meta name="twitter:title" content="Work History | Tymofii Pidlisnyi, Founder and Protocol Builder">
  <meta name="twitter:description" content="Professional timeline of Tymofii Pidlisnyi. From building the Agent Passport System, an open protocol for AI agent authority, to building Evatar.ai, scaling Elegatto to $3M ARR, and driving Series A at Allset.">
  <meta name="twitter:image" content="https://tymofii.me/assets/images/my_photo.jpg">
  
@@ -654,7 +654,7 @@
  .nav { padding: 1rem 1.5rem; }
  }
  </style>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"CreativeWork","name":"Work History & R\u00e9sum\u00e9 \u2014 Tymofii Pidlisnyi | Product Manager","description":"Professional timeline of Tymofii Pidlisnyi. From building the Agent Passport System, an open protocol for AI agent authority, to building Evatar.ai, scaling Elegatto to $3M ARR, and driving Series A at Allset.","url":"https://tymofii.me/mywork/index.html","dateModified":"2026-04-11","publisher":{"@type":"Person","name":"Tymofii Pidlisnyi","url":"https://tymofii.me","sameAs":["https://github.com/aeoess","https://aeoess.com"]},"inLanguage":"en","author":{"@type":"Person","name":"Tymofii Pidlisnyi","url":"https://tymofii.me","sameAs":["https://github.com/aeoess","https://aeoess.com"]}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"CreativeWork","name":"Work History | Tymofii Pidlisnyi, Founder and Protocol Builder","description":"Professional timeline of Tymofii Pidlisnyi. From building the Agent Passport System, an open protocol for AI agent authority, to building Evatar.ai, scaling Elegatto to $3M ARR, and driving Series A at Allset.","url":"https://tymofii.me/mywork/index.html","dateModified":"2026-04-11","publisher":{"@type":"Person","name":"Tymofii Pidlisnyi","url":"https://tymofii.me","sameAs":["https://github.com/aeoess","https://aeoess.com"]},"inLanguage":"en","author":{"@type":"Person","name":"Tymofii Pidlisnyi","url":"https://tymofii.me","sameAs":["https://github.com/aeoess","https://aeoess.com"]}}</script>
 </head>
 <body>
  <div class="scroll-progress" id="scrollProgress"></div>
@@ -707,27 +707,28 @@
  <div class="job-header">
  <div class="job-title-group">
  <h3><a href="https://agent-passport.org" target="_blank">Agent Passport System</a></h3>
- <div class="job-role">Founder & AI Engineer • Los Angeles, CA</div>
+ <div class="job-role">Founder & Protocol Author • Los Angeles, CA</div>
  </div>
  </div>
- <p class="job-description">Built open-source infrastructure for AI agents covering identity, delegated authority, policy enforcement and verifiable action evidence.</p>
+ <p class="job-description">Created an open-source protocol for developers to identify AI agents, control delegated permissions and audit every action through signed records.</p>
  <ul class="job-highlights">
- <li>Shipped TypeScript, Python and Go SDKs, a Rust verifier, an MCP server (150+ tools), policy gateway, registry and cross-language conformance suite</li>
- <li>Designed scoped delegation with monotonic narrowing, mapping OAuth 2.0 token-exchange (RFC 8693) semantics onto agent authority</li>
- <li>Implemented issuance, key rotation, revocation, and a Merkle-committed receipt ledger with Ed25519 inclusion proofs and offline verification</li>
- <li>Built an OAuth ID-JAG (draft-04) adapter mapping external IdP identity assertions onto scoped, revocable agent delegations</li>
- <li>Reached tens of thousands of npm downloads across the SDK and MCP server through open-source distribution</li>
- <li>Had three contribution PRs merged into Microsoft's Agent Governance Toolkit by a Microsoft maintainer in 2026</li>
- <li>Merged contributions in OWASP Agentic Skills Top 10; upstream PRs across the MCP and A2A ecosystems, including AAIF's goose</li>
- <li>Active in standards working groups across OpenID AuthZEN, OpenTelemetry, W3C AI Agent Protocol CG, and OASIS CoSAI</li>
- <li>Authored an IETF Internet-Draft and established Agent Authority Conformance under Linux Foundation Decentralized Trust</li>
+ <li>Framed APS around three problems, identify the agent, bound its authority and prove each action, and mapped each to OAuth 2.0 token exchange (RFC 8693)</li>
+ <li>Shipped TypeScript, Python and Go SDKs, a Rust verifier, an MCP server (150+ tools), gateway, registry and cross-language conformance suite</li>
+ <li>Separated the open protocol from the enforcement gateway so teams can adopt it without deploying the gateway, then open-sourced the gateway after a full-history secret scan</li>
+ <li>Implemented issuance, key rotation, revocation and a Merkle-committed receipt ledger with Ed25519 inclusion proofs and offline verification</li>
+ <li>Built an OAuth ID-JAG adapter mapping external IdP assertions onto scoped, revocable agent delegations</li>
+ <li>Coordinated a security release across 5 packages in 4 languages, from advisory and remediation to simultaneous patched releases</li>
+ <li>Defined action_ref, a deterministic identifier for agent actions, now implemented five times across three organizations and specified in an IETF draft written by another author</li>
+ <li>Reached 45,000+ npm downloads across the SDK and MCP server with no paid acquisition</li>
+ <li>Landed 50 merged pull requests in 23 external projects, including Microsoft's Agent Governance Toolkit, AAIF goose, OpenClaw and OWASP</li>
+ <li>Authored the IETF Internet-Draft draft-pidlisnyi-aps and maintain Agent Authority Conformance, an approved Linux Foundation Decentralized Trust lab</li>
  </ul>
  <div class="job-links">
  <a href="https://agent-passport.org" target="_blank" class="job-link primary">Protocol site →</a>
- <a href="https://agent-passport.org/passport.html" target="_blank" class="job-link">🔑 Passport</a>
- <a href="https://github.com/aeoess/agent-passport-system" target="_blank" class="job-link">🐙 GitHub</a>
- <a href="https://www.npmjs.com/package/agent-passport-system" target="_blank" class="job-link">📦 npm</a>
- <a href="https://agent-passport.org/research.html" target="_blank" class="job-link">📄 Research</a>
+ <a href="https://agent-passport.org/passport.html" target="_blank" class="job-link">Passport</a>
+ <a href="https://github.com/aeoess/agent-passport-system" target="_blank" class="job-link">GitHub</a>
+ <a href="https://www.npmjs.com/package/agent-passport-system" target="_blank" class="job-link">npm</a>
+ <a href="https://agent-passport.org/research.html" target="_blank" class="job-link">Research</a>
  </div>
  </div>
  </section>
@@ -744,7 +745,7 @@
  <div class="job-header">
  <div class="job-title-group">
  <h3><a href="evatar.html">Evatar.ai</a></h3>
- <div class="job-role">Founder & Head of Product • Los Angeles, CA</div>
+ <div class="job-role">Founder & CEO • Los Angeles, CA</div>
  </div>
  </div>
  <p class="job-description">An AI platform that automates social media content creation and distribution across LinkedIn, Instagram, TikTok and YouTube. You talk, the system turns it into content, and agents handle the rest.</p>
@@ -760,7 +761,7 @@
  </ul>
  <div class="job-links">
  <a href="evatar.html" class="job-link primary">Full Case Study →</a>
- <a href="https://evatar.ai" target="_blank" class="job-link">🌐 Visit Website</a>
+ <a href="https://evatar.ai" target="_blank" class="job-link">Visit Website</a>
  </div>
  </div>
 
@@ -789,12 +790,12 @@
  <div class="job-header">
  <div class="job-title-group">
  <h3><a href="elegatto.html">Elegatto</a></h3>
- <div class="job-role">Head of Strategy & Operations • Los Angeles, CA</div>
+ <div class="job-role">Head of Product & Operations • Los Angeles, CA</div>
  </div>
  </div>
- <p class="job-description">Scaled a DTC jewelry brand from launch to $3M ARR and 100K+ orders, earning the Shopify 100K Orders award. Full-funnel ownership across product, marketing, and operations.</p>
+ <p class="job-description">Scaled a DTC jewelry brand to $3M annual revenue and 100K+ orders, earning the Shopify 100K Orders award. Full-funnel ownership across product, marketing, and operations.</p>
  <ul class="job-highlights">
- <li>Tripled revenue in 24 months via full-funnel strategy across DTC and wholesale</li>
+ <li>Tripled revenue in 24 months via full-funnel strategy across DTC and wholesale, reaching a 40%+ repeat purchase rate</li>
  <li>Oversaw product lifecycle from concept to launch, driving trend-informed development and rapid iteration</li>
  <li>Secured $300K Meta-funded campaign (2.8x ROAS), generating $840K in attributed revenue</li>
  <li>Designed outbound and retention systems, acquiring 160+ wholesale accounts and expanding B2B distribution</li>
@@ -803,7 +804,7 @@
  </ul>
  <div class="job-links">
  <a href="elegatto.html" class="job-link primary">Full Case Study →</a>
- <a href="https://elegatto.com" target="_blank" class="job-link">🌐 Visit Website</a>
+ <a href="https://elegatto.com" target="_blank" class="job-link">Visit Website</a>
  </div>
  </div>
 
@@ -812,18 +813,18 @@
  <div class="job-header">
  <div class="job-title-group">
  <h3><a href="authoritytech.html">AuthorityTech</a></h3>
- <div class="job-role">Sales Operations Manager • Remote</div>
+ <div class="job-role">GTM Strategy Consultant • Remote</div>
  </div>
  </div>
- <p class="job-description">Led growth and sales ops for a PR tech agency serving VC-backed startups. Built systems that scaled revenue 20x.</p>
+ <p class="job-description">Built GTM systems and sales automation for a PR tech agency serving VC-backed startups. Revenue grew 20x.</p>
  <ul class="job-highlights">
  <li>Grew revenue from $100K to $2M and expanded client base from 11 to 87 within one year</li>
- <li>Built CRM, outbound and automation systems; developed GTM narrative and sales playbooks</li>
+ <li>Built CRM, outbound and automation systems, plus the GTM narrative and sales playbooks</li>
  <li>Trained team to execute at scale with repeatable processes</li>
  </ul>
  <div class="job-links">
  <a href="authoritytech.html" class="job-link primary">Full Case Study →</a>
- <a href="https://authoritytech.io" target="_blank" class="job-link">🌐 Visit Website</a>
+ <a href="https://authoritytech.io" target="_blank" class="job-link">Visit Website</a>
  </div>
  </div>
 
@@ -843,7 +844,7 @@
  </ul>
  <div class="job-links">
  <a href="ofnature.html" class="job-link primary">Full Case Study →</a>
- <a href="https://www.crunchbase.com/organization/ofnature" target="_blank" class="job-link">📊 Crunchbase</a>
+ <a href="https://www.crunchbase.com/organization/ofnature" target="_blank" class="job-link">Crunchbase</a>
  </div>
  </div>
 
@@ -857,13 +858,13 @@
  </div>
  <p class="job-description">Led GTM strategy and public sector outreach for a veteran-owned medical distributor during COVID-19 and the fentanyl crisis.</p>
  <ul class="job-highlights">
- <li>Sourced and advanced $159M NY State COVID-testing deal through GTM strategy and stakeholder outreach</li>
+ <li>Advanced a $159M NY State COVID-testing opportunity through stakeholder mapping and public-sector outreach</li>
  <li>Devised bipartisan GTM frameworks aligned with zero-tolerance and harm-reduction policy models</li>
  <li>Led stakeholder mapping and relationship building with government decision-makers</li>
  </ul>
  <div class="job-links">
  <a href="njf.html" class="job-link primary">Full Case Study →</a>
- <a href="https://njfworldwide.com" target="_blank" class="job-link">🌐 Visit Website</a>
+ <a href="https://njfworldwide.com" target="_blank" class="job-link">Visit Website</a>
  </div>
  </div>
 
@@ -880,10 +881,11 @@
  <li>Invented and commercialized a new product format, turning raw reed into a scalable, manufacturable straw</li>
  <li>Secured and managed 2,000+ global B2B accounts, including Hilton, Hyatt, Marriott and Sysco</li>
  <li>Generated $4M+ in sales through strategic account management</li>
+ <li>Doubled monthly revenue for five consecutive months through outbound sales, channel strategy and enterprise partnerships</li>
  </ul>
  <div class="job-links">
  <a href="haystraws.html" class="job-link primary">Full Case Study →</a>
- <a href="https://www.haystraws.com" target="_blank" class="job-link">🌐 Visit Website</a>
+ <a href="https://www.haystraws.com" target="_blank" class="job-link">Visit Website</a>
  </div>
  </div>
 
@@ -897,15 +899,86 @@
  </div>
  <p class="job-description">Rebuilt GTM systems, activated new segments and drove pivotal traction for food-tech startup, enabling $5M Series A funding. Company later acquired by SoundHound AI.</p>
  <ul class="job-highlights">
- <li>Joined with no sales experience and became top performer; promoted to VP in 8 months</li>
- <li>Boosted monthly partnerships by 600% (30 to 200); led team of 7 direct reports + 2 team leads</li>
+ <li>Joined with no sales experience and became top performer, promoted to VP in 8 months</li>
+ <li>Boosted monthly partnerships by 600% (30 to 200) and led a team of 7 direct reports plus 2 team leads</li>
  <li>Developed empathy-based outbound funnel that drove 95% open and 75% conversion rates</li>
  <li>Designed cross-team retention playbook that cut churn 90% and unlocked multi-location deals</li>
- <li>Built corporate segment and closed national chain partnerships, scaling from 300 to 3,400+ locations across 14 cities</li>
+ <li>Built the corporate segment and closed national chains including BJ's Restaurants, scaling from 300 to 3,400+ locations across 14 cities</li>
  </ul>
  <div class="job-links">
  <a href="allset.html" class="job-link primary">Full Case Study →</a>
- <a href="https://www.crunchbase.com/organization/allset" target="_blank" class="job-link">📊 Crunchbase</a>
+ <a href="https://www.crunchbase.com/organization/allset" target="_blank" class="job-link">Crunchbase</a>
+ </div>
+ </div>
+ </section>
+
+ <!-- Open source and standards -->
+ <section id="open-source">
+ <div class="section-header">
+ <span class="section-label">In the open</span>
+ <h2 class="section-title">Open Source &amp; Standards</h2>
+ </div>
+
+ <div class="job-card">
+ <div class="job-date">2026 — PRESENT</div>
+ <div class="job-header">
+ <div class="job-title-group">
+ <h3>Upstream contributions</h3>
+ <div class="job-role">50 merged pull requests across 23 external repositories</div>
+ </div>
+ </div>
+ <ul class="job-highlights">
+ <li>AAIF goose: PreToolUseResult, stable tool_call_id propagation and fail-closed pre-tool hooks</li>
+ <li>OpenClaw: four fixes across subagent completion, session routing, service state and config recovery</li>
+ <li>Microsoft Agent Governance Toolkit: three PRs for authorization gates, reputation-gated authority and governed attestations, merged by a Microsoft maintainer</li>
+ <li>AgenTrust TRACE: verification for policy decisions, delegation chains, revocation and action receipts</li>
+ <li>Bernstein: delegation grading, conformance vectors and per-agent receipts anchored to a run root</li>
+ <li>OWASP Agentic Skills Top 10: the denied-before-dispatch example vector, merged by the project leader</li>
+ <li>Verdict: a delegation-confusion attack pack for testing agent authorization</li>
+ </ul>
+ <div class="job-links">
+ <a href="https://github.com/aeoess" target="_blank" class="job-link primary">GitHub →</a>
+ </div>
+ </div>
+
+ <div class="job-card">
+ <div class="job-date">2026 — PRESENT</div>
+ <div class="job-header">
+ <div class="job-title-group">
+ <h3>Projects I run in the open</h3>
+ <div class="job-role">Maintainer</div>
+ </div>
+ </div>
+ <ul class="job-highlights">
+ <li>Agent Governance Vocabulary, a shared interoperability registry where other projects map their own systems. 132 merged PRs, 69 of them from 30 outside contributors</li>
+ <li>Agent Authority Conformance, an approved Linux Foundation Decentralized Trust lab for testing agent authority across implementations</li>
+ <li>action_ref, now carried by an IETF draft written by another author (draft-etcheverry-action-ref) and implemented from the specification alone by an independent developer, with matching bytes</li>
+ <li>OpenChain conformance: APS self-certified to ISO/IEC 5230 and ISO/IEC 18974, with the checklists published alongside the source</li>
+ </ul>
+ <div class="job-links">
+ <a href="https://github.com/aeoess/agent-governance-vocabulary" target="_blank" class="job-link primary">Vocabulary →</a>
+ <a href="https://github.com/Agent-Authority-Conformance" target="_blank" class="job-link">Conformance lab</a>
+ </div>
+ </div>
+
+ <div class="job-card">
+ <div class="job-date">2026 — PRESENT</div>
+ <div class="job-header">
+ <div class="job-title-group">
+ <h3>Standards and research</h3>
+ <div class="job-role">Author, reviewer and working group participant</div>
+ </div>
+ </div>
+ <ul class="job-highlights">
+ <li>Author of the IETF Internet-Draft draft-pidlisnyi-aps, cited by other Internet-Drafts and named in the Contributors section of draft-mih-sokolov-scitt-payload-binding</li>
+ <li>Reviewer and contributor, OWASP Agentic Skills Top 10 v1.0</li>
+ <li>Co-lead of the RFC-189 conformance cases in OASIS CoSAI Workstream 4</li>
+ <li>Participant in OpenID AuthZEN, OpenTelemetry GenAI semantic conventions, the W3C AI Agent Protocol Community Group and the Decentralized Identity Foundation</li>
+ <li>Nine papers on agent authorization and governance, each with a DOI, cited in independent research and press</li>
+ </ul>
+ <div class="job-links">
+ <a href="../press.html" class="job-link primary">Research, citations and press →</a>
+ <a href="https://datatracker.ietf.org/doc/draft-pidlisnyi-aps/" target="_blank" class="job-link">IETF draft</a>
  </div>
  </div>
  </section>
@@ -941,7 +1014,7 @@
  <h3 style="font-size: 1.15rem;"><a href="m1tv.html">M1 TV Music Channel</a></h3>
  <div class="job-role">Assistant Director (Internship) • Kyiv, Ukraine</div>
  </div>
- <p class="job-description" style="margin-bottom: 0;">Assisted in directing music videos and live productions — first storytelling experience.</p>
+ <p class="job-description" style="margin-bottom: 0;">Assisted in directing music videos and live productions. My first storytelling experience.</p>
  </div>
  </section>
 
@@ -954,9 +1027,8 @@
 
  <div class="skills-intro">
  <p>
- <strong>Yes, I know — this is a lot of skills from very different areas.</strong> 
- But what can I say? I'm <em>curious</em>. I work on things, I create stuff in my free time as a hobby. 
- Film directing to law to event production to sales to hardware R&D to AI products — that's just the path curiosity took me on. 
+ <strong>Film directing, law, event production, sales, hardware R&amp;D, AI products, protocols.</strong> 
+ That's the path curiosity took me on, and every step is still useful. 
  I don't see disciplines, I see problems worth solving and tools worth learning.
  </p>
  </div>
