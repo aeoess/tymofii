@@ -39,7 +39,7 @@
  <link rel="preconnect" href="https://www.googletagmanager.com">
  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Tymofii Pidlisnyi — AI Product Builder</title>
+ <title>Tymofii Pidlisnyi | AI Protocol Builder</title>
  <!-- SEO Meta Tags -->
  <meta name="description" content="Portfolio of Tymofii Pidlisnyi: founder of AEOESS and the Agent Passport System, the open protocol for AI agent identity and accountability. Previously Evatar.ai, ofNature, and 10+ AI products.">
  <link rel="canonical" href="https://tymofii.me/">
@@ -96,8 +96,8 @@
  },
  "worksFor": {
  "@type": "Organization",
- "name": "AEOESS",
- "url": "https://aeoess.com"
+ "name": "Agent Passport System",
+ "url": "https://agent-passport.org"
  }
 }
  </script>
@@ -111,7 +111,7 @@
  "@type": "Person",
  "name": "Tymofii Pidlisnyi"
  },
- "description": "Portfolio of Tymofii Pidlisnyi \u2014 product manager, serial entrepreneur, and creative founder."
+ "description": "Tymofii Pidlisnyi builds the Agent Passport System, an open protocol for AI agent authority. Founder, product builder and former film director."
 }
  </script>
 
@@ -2455,6 +2455,246 @@
  margin-bottom: 1.25em;
  }
 </style>
+<style id="cards-v3">
+:root {
+ --line: rgba(245, 243, 240, 0.09);
+ --line-strong: rgba(245, 243, 240, 0.18);
+ --tile-bg: rgba(255, 255, 255, 0.025);
+ --tile-bg-hover: rgba(255, 255, 255, 0.045);
+ --state-live: #6FC3EE;
+ --state-proto: #E9C95A;
+ --state-paused: #C9A27A;
+ --state-past: #8B9199;
+}
+[data-theme="bright"] {
+ --line: rgba(43, 38, 34, 0.10);
+ --line-strong: rgba(43, 38, 34, 0.22);
+ --tile-bg: rgba(255, 255, 255, 0.55);
+ --tile-bg-hover: rgba(255, 255, 255, 0.9);
+ --state-live: #1F6FA8;
+ --state-proto: #8A6A00;
+ --state-paused: #8A5A2B;
+ --state-past: #6B7280;
+}
+
+/* shared labels */
+.work-kind {
+ font-family: 'Inter', sans-serif;
+ font-size: 0.72rem;
+ letter-spacing: 0.12em;
+ text-transform: uppercase;
+ color: var(--text-muted);
+}
+.state {
+ display: inline-flex;
+ align-items: center;
+ gap: 0.45rem;
+ font-family: 'Inter', sans-serif;
+ font-size: 0.72rem;
+ font-weight: 500;
+ letter-spacing: 0.12em;
+ text-transform: uppercase;
+ color: var(--state-past);
+}
+.state::before {
+ content: '';
+ width: 6px;
+ height: 6px;
+ border-radius: 50%;
+ background: currentColor;
+}
+.state-live { color: var(--state-live); }
+.state-live::before { box-shadow: 0 0 0 3px color-mix(in srgb, currentColor 22%, transparent); }
+.state-proto { color: var(--state-proto); }
+.state-paused { color: var(--state-paused); }
+.state-past::before { background: transparent; border: 1px solid currentColor; }
+
+/* featured projects: an editorial index */
+.work-list {
+ max-width: 1040px;
+ margin: 3rem auto 0;
+ border-top: 1px solid var(--line);
+}
+.work-row {
+ position: relative;
+ display: grid;
+ grid-template-columns: 5.5rem 1fr;
+ gap: 0 2rem;
+ padding: 2.6rem 0 2.8rem;
+ border-bottom: 1px solid var(--line);
+}
+.work-row::before {
+ content: '';
+ position: absolute;
+ left: 0;
+ top: -1px;
+ height: 1px;
+ width: 0;
+ background: linear-gradient(90deg, var(--accent-cyan), var(--accent-yellow));
+ transition: width 0.6s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.work-row:hover::before { width: 100%; }
+.work-index {
+ font-family: 'Cormorant Garamond', Georgia, serif;
+ font-style: italic;
+ font-size: 2.6rem;
+ line-height: 1;
+ color: var(--text-muted);
+ opacity: 0.7;
+ padding-top: 0.15rem;
+ transition: color 0.4s ease, opacity 0.4s ease;
+}
+.work-row:hover .work-index { color: var(--accent-cyan); opacity: 1; }
+.work-meta {
+ display: flex;
+ flex-wrap: wrap;
+ align-items: center;
+ gap: 0.6rem 1.25rem;
+ margin-bottom: 0.9rem;
+}
+.work-title {
+ font-family: 'Plus Jakarta Sans', sans-serif;
+ font-size: clamp(1.5rem, 2.6vw, 2rem);
+ font-weight: 500;
+ letter-spacing: -0.01em;
+ line-height: 1.15;
+ margin: 0 0 0.7rem;
+ color: var(--text);
+}
+.is-lead .work-title { font-size: clamp(1.8rem, 3.4vw, 2.6rem); }
+.work-lede {
+ font-family: 'Inter', sans-serif;
+ font-size: 1.05rem;
+ line-height: 1.55;
+ color: var(--text);
+ max-width: 46rem;
+ margin: 0 0 0.6rem;
+}
+.work-detail {
+ font-family: 'Inter', sans-serif;
+ font-size: 0.95rem;
+ line-height: 1.65;
+ color: var(--text-muted);
+ max-width: 46rem;
+ margin: 0;
+}
+.work-facts {
+ list-style: none;
+ display: flex;
+ flex-wrap: wrap;
+ gap: 0.5rem;
+ margin: 1.3rem 0 0;
+ padding: 0;
+}
+.work-facts li {
+ font-family: 'Inter', sans-serif;
+ font-size: 0.78rem;
+ color: var(--text-muted);
+ padding: 0.3rem 0.7rem;
+ border: 1px solid var(--line-strong);
+ border-radius: 999px;
+}
+.work-links {
+ display: flex;
+ flex-wrap: wrap;
+ gap: 0.5rem 1.6rem;
+ margin-top: 1.5rem;
+}
+.work-link {
+ font-family: 'Inter', sans-serif;
+ font-size: 0.9rem;
+ font-weight: 500;
+ color: var(--text-muted);
+ text-decoration: none;
+ padding: 0.2rem 0;
+ border-bottom: 1px solid transparent;
+ transition: color 0.25s ease, border-color 0.25s ease;
+}
+.work-link span { display: inline-block; transition: transform 0.25s ease; }
+.work-link:hover { color: var(--text); border-bottom-color: var(--accent-cyan); }
+.work-link:hover span { transform: translate(2px, -1px); }
+.work-link.primary { color: var(--accent-cyan); }
+.work-link:focus-visible, .lab-tile:focus-visible {
+ outline: 2px solid var(--accent-cyan);
+ outline-offset: 4px;
+ border-radius: 4px;
+}
+
+/* lab: flat tiles, whole tile is the link */
+.lab-tiles {
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ grid-auto-flow: dense;
+ gap: 1rem;
+ max-width: 1040px;
+ margin: 3rem auto 0;
+}
+.lab-tile {
+ display: flex;
+ flex-direction: column;
+ min-height: 15rem;
+ padding: 1.5rem 1.5rem 1.35rem;
+ background: var(--tile-bg);
+ border: 1px solid var(--line);
+ border-radius: 14px;
+ color: var(--text);
+ text-decoration: none;
+ transition: background 0.3s ease, border-color 0.3s ease;
+}
+.lab-tile.is-wide { grid-column: span 2; }
+.lab-tile:hover { background: var(--tile-bg-hover); border-color: var(--line-strong); }
+.tile-top {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ gap: 1rem;
+ margin-bottom: 1.4rem;
+}
+.tile-title {
+ font-family: 'Plus Jakarta Sans', sans-serif;
+ font-size: 1.25rem;
+ font-weight: 500;
+ letter-spacing: -0.005em;
+ margin: 0 0 0.6rem;
+}
+.lab-tile p {
+ font-family: 'Inter', sans-serif;
+ font-size: 0.9rem;
+ line-height: 1.6;
+ color: var(--text-muted);
+ margin: 0;
+ max-width: 38rem;
+}
+.tile-go {
+ margin-top: auto;
+ padding-top: 1.3rem;
+ font-family: 'Inter', sans-serif;
+ font-size: 0.85rem;
+ font-weight: 500;
+ color: var(--text-muted);
+ transition: color 0.25s ease;
+}
+.tile-go span { display: inline-block; transition: transform 0.25s ease; }
+.lab-tile:hover .tile-go { color: var(--accent-cyan); }
+.lab-tile:hover .tile-go span { transform: translateX(3px); }
+
+@media (max-width: 1000px) {
+ .lab-tiles { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 768px) {
+ .work-list, .lab-tiles { margin-top: 2rem; }
+ .work-row { grid-template-columns: 1fr; padding: 1.9rem 0 2rem; }
+ .work-index { font-size: 1.6rem; margin-bottom: 0.8rem; }
+ .work-lede { font-size: 1rem; }
+ .work-links { gap: 0.4rem 1.3rem; }
+ .lab-tiles { grid-template-columns: 1fr; gap: 0.75rem; }
+ .lab-tile.is-wide { grid-column: auto; }
+ .lab-tile { min-height: 0; padding: 1.3rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+ .work-row::before, .work-link span, .tile-go span { transition: none; }
+}
+</style>
 </head>
 
 <body data-theme="dark">
@@ -2594,21 +2834,23 @@
  <div class="profile-overlay-bio">
  <p>Hi, I'm Tima. Creator who builds.</p>
 
- <p>I started in film directing — living through stories, feelings, imagination. Then at 33, something switched. I got tired of having ideas and not being able to ship them myself. I taught myself product, operations, systems, and sales — everything needed to turn ideas into something real.</p>
+ <p>Right now I build the Agent Passport System, an open protocol for what AI agents are allowed to do, and proof of what they did.</p>
 
- <p>I'm a generalist by nature. Film to sales to ops to product wasn't me jumping around — it was me getting closer to the full system. Now I build: apps, AI automations, websites, music (10 albums in two months with AI). To me, work is creating artifacts: experiments, products, artwork. Not everything has to be monetary, but it should be beautiful to make and useful to someone.</p>
+ <p>I started in film directing, living through stories, feelings and imagination. Then at 33 something switched. I got tired of having ideas and not being able to ship them myself. So I taught myself product, operations, systems and sales, everything needed to turn an idea into something real.</p>
+
+ <p>I'm a generalist by nature. Film to sales to ops to product wasn't me jumping around. It was me getting closer to the full system. Now I build apps, AI agents, protocols and music (10 albums in two months with AI). Not everything has to be monetary, but it should be beautiful to make and useful to someone.</p>
 
  <p>I'm Ukrainian. I moved to the US after the Maidan revolution and rebuilt from zero. That's why ambiguity feels normal to me.</p>
 
- <p>I'm not a smooth talker in English. I make situations awkward and I'm still figuring out why. But I'm relentlessly capable, obsessively curious, and I don't stop until it's real.</p>
+ <p>I'm not a smooth talker in English. I'd rather show you something working. I'm obsessively curious, and I don't stop until it's real.</p>
 
  <p>I replaced social media scrolling with bullet chess. That probably explains how my brain works.</p>
 
  <p><strong>Principles, for now:</strong><br>
- Less interfaces, more outcomes.<br>
- Embarrassment is underexplored — go make a fool of yourself.</p>
+ Fewer interfaces, more outcomes.<br>
+ Embarrassment is underexplored. Go make a fool of yourself.</p>
 
- <p>My life's been quite the adventure — some parts might shock you. <a href="bio.html">Read the full story →</a></p>
+ <p>My life's been quite the adventure. Some parts might shock you. <a href="bio.html">Read the full story →</a></p>
  </div>
  </div>
  <img src="assets/images/my_photo.jpg" alt="Tymofii Pidlisnyi portrait" class="profile-overlay-photo" width="400" height="435" loading="lazy">
@@ -2653,58 +2895,55 @@
  <h3 class="section-title">FEATURED PROJECTS</h3>
  </div>
 
- <div class="projects-grid">
- <!-- 1. Agent Passport System (Active) — the open protocol -->
- <div class="project-card">
- <span class="project-tag active">Active</span>
- <h3>Agent Passport System</h3>
- <p>An open protocol for what an AI agent is allowed to do, and proof of what it did.</p>
- <p>It checks authority before execution and leaves a signed record after. Open source, with SDKs in four languages and an IETF Internet-Draft.</p>
- <div class="project-links">
- <a href="https://agent-passport.org" target="_blank" class="project-link primary">Protocol site →</a>
- <a href="https://agent-passport.org/passport.html" target="_blank" class="project-link">🔑 Passport</a>
- <a href="https://github.com/aeoess/agent-passport-system" target="_blank" class="project-link">🐙 GitHub</a>
- <a href="https://www.npmjs.com/package/agent-passport-system" target="_blank" class="project-link">📦 npm</a>
+<div class="work-list">
+ <article class="work-row is-lead">
+ <div class="work-index">01</div>
+ <div class="work-body">
+ <div class="work-meta"><span class="state state-live">Active</span><span class="work-kind">Open protocol</span></div>
+ <h3 class="work-title">Agent Passport System</h3>
+ <p class="work-lede">An open protocol for what an AI agent is allowed to do, and proof of what it did.</p>
+ <p class="work-detail">It checks authority before an action runs and leaves a signed record after. The protocol, the gateway and the SDKs are open source, and the spec is an IETF Internet-Draft.</p>
+ <ul class="work-facts">
+ <li>TypeScript, Python and Go SDKs</li>
+ <li>Rust verifier</li>
+ <li>IETF Internet-Draft</li>
+ <li>Apache 2.0</li>
+ </ul>
+ <div class="work-links">
+ <a href="https://agent-passport.org" target="_blank" rel="noopener" class="work-link primary">Protocol site <span aria-hidden="true">↗</span></a>
+ <a href="https://github.com/agent-passport-system/agent-passport-system" target="_blank" rel="noopener" class="work-link">GitHub <span aria-hidden="true">↗</span></a>
+ <a href="https://github.com/agent-passport-system/agent-passport-gateway" target="_blank" rel="noopener" class="work-link">Gateway <span aria-hidden="true">↗</span></a>
+ <a href="https://www.npmjs.com/package/agent-passport-system" target="_blank" rel="noopener" class="work-link">npm <span aria-hidden="true">↗</span></a>
  </div>
  </div>
-
- <!-- 2. AEOESS (Active) — the company -->
- <div class="project-card">
- <span class="project-tag active">Active</span>
- <h3>AEOESS</h3>
- <p>The gateway built on APS.</p>
- <p>The protocol says what governance is. The gateway says how well it works: it sits between an agent and the systems it can touch, decides, and records the outcome. APS stays open. The gateway is where the business gets tested.</p>
- <div class="project-links">
- <a href="https://aeoess.com" target="_blank" class="project-link primary">aeoess.com →</a>
+ </article>
+ <article class="work-row">
+ <div class="work-index">02</div>
+ <div class="work-body">
+ <div class="work-meta"><span class="state state-past">Past</span><span class="work-kind">AI content platform</span></div>
+ <h3 class="work-title">Evatar.ai</h3>
+ <p class="work-lede">My attempt to make social media disappear as a job.</p>
+ <p class="work-detail">You talk, the system turns it into content, and agents handle the rest. We reached 300+ users and 1.6M monthly impressions.</p>
+ <div class="work-links">
+ <a href="mywork/evatar.html" class="work-link primary">Case study <span aria-hidden="true">→</span></a>
+ <a href="https://evatar.ai" target="_blank" rel="noopener" class="work-link">Website <span aria-hidden="true">↗</span></a>
  </div>
  </div>
-
- <!-- 2. Evatar.ai (Past) -->
- <div class="project-card">
- <span class="project-tag">Past Project</span>
- <h3>Evatar.ai</h3>
- <p>My attempt to make social media disappear as a job.</p>
- <p>You talk, the system turns it into content, and agents handle the rest. We reached 300+ users and 1.6M monthly impressions.</p>
- <div class="project-links">
- <a href="mywork/evatar.html" class="project-link primary">Case Study →</a>
- <a href="https://evatar.ai" target="_blank" class="project-link">🌐 Website</a>
+ </article>
+ <article class="work-row">
+ <div class="work-index">03</div>
+ <div class="work-body">
+ <div class="work-meta"><span class="state state-past">Past</span><span class="work-kind">Materials startup</span></div>
+ <h3 class="work-title">ofNature</h3>
+ <p class="work-lede">A sustainable straw built for industrial scale.</p>
+ <p class="work-detail">I started ofNature after Starbucks told us our first sustainable straw could not scale. We built a cellulose acetate alternative, raised $150K and set up manufacturing in Ukraine. The war ended the company. In 2025, McDonald's switched to cellulose acetate straws.</p>
+ <div class="work-links">
+ <a href="mywork/ofnature.html" class="work-link primary">Case study <span aria-hidden="true">→</span></a>
+ <a href="https://www.crunchbase.com/organization/ofnature" target="_blank" rel="noopener" class="work-link">Crunchbase <span aria-hidden="true">↗</span></a>
  </div>
  </div>
-
- <!-- 2. ofNature (Past Project) -->
- <div class="project-card">
- <span class="project-tag">Past Project</span>
- <h3>ofNature</h3>
- <p>I started ofNature after Starbucks told us our first sustainable straw could not scale.</p>
- <p>We built a cellulose acetate alternative, raised $150K, and set up manufacturing in Ukraine. War ended the company.</p>
- <p>In 2025, McDonald's adopted the same material globally.</p>
- <div class="project-links">
- <a href="mywork/ofnature.html" class="project-link primary">Case Study →</a>
- <a href="https://www.crunchbase.com/organization/ofnature" target="_blank" class="project-link">📊 Crunchbase</a>
- </div>
- </div>
-
- </div>
+ </article>
+</div>
  </div>
  </section>
 
@@ -2720,90 +2959,50 @@
  <p class="section-subtitle">Things I build because I want to know what happens.</p>
  </div>
 
- <div class="lab-grid">
- <!-- 1. Mingle (LIVE) -->
- <div class="lab-card featured">
- <div class="lab-status" style="background:rgba(0,255,136,0.15);color:#00ff88">LIVE</div>
- <h4 style="color:#00ff88">Mingle</h4>
- <p>An experiment in meeting people through AI instead of feeds.</p>
- <p>Tell your agent who you want to meet. It finds matches. Both people opt in before anything happens.</p>
- <p>120+ profiles are live.</p>
- <a href="https://aeoess.com/mingle.html" class="lab-explore-btn" style="border-color:#00ff88;color:#00ff88">
- Explore <span class="arrow">→</span>
+<div class="lab-tiles">
+ <a class="lab-tile is-wide" href="https://aeoess.com/mingle.html">
+ <div class="tile-top"><span class="work-kind">Social experiment</span><span class="state state-live">Live</span></div>
+ <h4 class="tile-title">Mingle</h4>
+ <p>Meeting people through AI instead of feeds. Tell your agent who you want to meet. It finds matches, and both people opt in before anything happens.</p>
+ <span class="tile-go">Explore <span aria-hidden="true">→</span></span>
  </a>
- </div>
-
- <!-- 2. Vibe Coding / Weekend Builds -->
- <div class="lab-card">
- <div class="lab-status">Collection</div>
- <h4>Weekend Builds</h4>
- <p>Small apps and weird ideas I build fast to see if they deserve more time.</p>
- <p>Some become products. Some are just a weekend well spent.</p>
- <a href="https://apps.apple.com/us/app/video-prompt-director/id6754946084" target="_blank" class="lab-explore-btn">
- Explore <span class="arrow">→</span>
+ <a class="lab-tile" href="datadividend/index.html">
+ <div class="tile-top"><span class="work-kind">Data licensing</span><span class="state state-proto">Prototype</span></div>
+ <h4 class="tile-title">DataDividend</h4>
+ <p>If AI companies make money from your data, should some of that value come back to you? You choose what to license. If it sells, you get paid.</p>
+ <span class="tile-go">Learn more <span aria-hidden="true">→</span></span>
  </a>
- </div>
-
- <!-- 3. DataDividend (moved from Featured) -->
- <div class="lab-card">
- <div class="lab-status">Active</div>
- <h4>DataDividend</h4>
- <p>A prototype built around one question:</p>
- <p>If AI companies make money from your data, should some of that value come back to you?</p>
- <p>You choose what to license. If it sells, you get paid.</p>
- <a href="datadividend/index.html" class="lab-explore-btn">
- Learn More <span class="arrow">→</span>
+ <a class="lab-tile" href="mywork/aeoess.html">
+ <div class="tile-top"><span class="work-kind">Hardware</span><span class="state state-paused">Paused</span></div>
+ <h4 class="tile-title">Breathing wearable</h4>
+ <p>A nose wearable with airflow sensors and an AI coach, built to make breathing measurable. The hardware worked. I paused it when the next step needed a medical cofounder.</p>
+ <span class="tile-go">Full project <span aria-hidden="true">→</span></span>
  </a>
- </div>
-
- <!-- 4. AEOESS Device (Prototype) - FEATURED WITH BADGE -->
- <div class="lab-card featured">
- <div class="lab-status">Prototype</div>
- <h4>
- ÆOESS Device
- <span class="hardware-badge">⚡ Hardware Deep Dive</span>
- </h4>
- <p>I wanted to make breathing measurable, so I built a nose wearable with airflow sensors and an AI coach.</p>
- <p>The hardware worked. I paused it when the next step clearly needed a medical cofounder, not more solo building.</p>
- <a href="mywork/aeoess.html" class="lab-explore-btn">
- Full Project <span class="arrow">→</span>
+ <a class="lab-tile" href="https://youtu.be/lhNLBLna3OQ" target="_blank" rel="noopener">
+ <div class="tile-top"><span class="work-kind">Simulation</span><span class="state state-proto">Experiment</span></div>
+ <h4 class="tile-title">Clinical Swarm Intelligence</h4>
+ <p>67 agents monitoring one patient at once. The question was whether agents that update each other's beliefs catch risks that a simple average misses.</p>
+ <span class="tile-go">Watch demo <span aria-hidden="true">↗</span></span>
  </a>
- </div>
-
- <!-- 4b. Clinical Swarm Intelligence (Experiment) -->
- <div class="lab-card featured">
- <div class="lab-status" style="background:rgba(0,255,136,0.15);color:#00ff88">Experiment</div>
- <h4 style="color:#00ff88">Clinical Swarm Intelligence</h4>
- <p>A simulation of 67 agents monitoring one patient at once.</p>
- <p>The question was whether agents updating each other's beliefs could surface risks that disappear when you simply average their answers.</p>
- <a href="https://youtu.be/lhNLBLna3OQ" target="_blank" class="lab-explore-btn" style="border-color:#00ff88;color:#00ff88">
- Watch Demo <span class="arrow">→</span>
+ <a class="lab-tile" href="https://apps.apple.com/us/app/video-prompt-director/id6754946084" target="_blank" rel="noopener">
+ <div class="tile-top"><span class="work-kind">Small apps</span><span class="state state-past">Collection</span></div>
+ <h4 class="tile-title">Weekend Builds</h4>
+ <p>Small apps and weird ideas I build fast to see if they deserve more time. Some become products. Some are a weekend well spent.</p>
+ <span class="tile-go">Explore <span aria-hidden="true">↗</span></span>
  </a>
- </div>
-
- <!-- 5. AEOESS Music (Music) -->
- <div class="lab-card">
- <div class="lab-status">Music</div>
- <h4>æœss music</h4>
- <p>I use AI to make music because some stories are easier to sing than explain.</p>
- <p>Ten albums in two months. A lot of them are about love that never happened.</p>
- <a href="https://open.spotify.com/artist/6N4IO6ByfmjqJGbufMAmwA" target="_blank" class="lab-explore-btn">
- Listen <span class="arrow">→</span>
+ <a class="lab-tile" href="https://open.spotify.com/artist/6N4IO6ByfmjqJGbufMAmwA" target="_blank" rel="noopener">
+ <div class="tile-top"><span class="work-kind">Music</span><span class="state state-past">Ongoing</span></div>
+ <h4 class="tile-title">æœss music</h4>
+ <p>I use AI to make music, because some stories are easier to sing than explain. Ten albums in two months, a lot of them about love that never happened.</p>
+ <span class="tile-go">Listen <span aria-hidden="true">↗</span></span>
  </a>
- </div>
-
- <!-- 6. Creative Projects (Collection) -->
- <div class="lab-card">
- <div class="lab-status">Collection</div>
- <h4>Creative Projects</h4>
- <p>Before startups, I directed films and music videos. Some reached 14M+ views.</p>
- <p>I still come back to visual storytelling whenever code is the wrong medium.</p>
- <a href="mywork/creative-projects.html" class="lab-explore-btn">
- View All <span class="arrow">→</span>
+ <a class="lab-tile is-wide" href="mywork/creative-projects.html">
+ <div class="tile-top"><span class="work-kind">Film</span><span class="state state-past">Collection</span></div>
+ <h4 class="tile-title">Creative Projects</h4>
+ <p>Before startups, I directed films and music videos. Some reached 14M+ views. I still come back to visual storytelling when code is the wrong medium.</p>
+ <span class="tile-go">View all <span aria-hidden="true">→</span></span>
  </a>
- </div>
-
- </div>
+</div>
  </div>
  </section>
 
@@ -2845,7 +3044,7 @@
  <a href="https://doi.org/10.5281/zenodo.19260073" target="_blank" rel="noopener" style="color:var(--text);text-decoration:none">
  <h4 style="font-size:1.15rem;margin:0 0 0.5rem">Faceted Authority Attenuation: A Product Lattice Model for Scoped Delegation in Multi-Agent Systems</h4>
  </a>
- <p style="font-size:0.9rem;color:var(--text-muted);margin:0 0 0.5rem">Formal model for how agent authority narrows monotonically across delegation chains. Independently validated by external research groups.</p>
+ <p style="font-size:0.9rem;color:var(--text-muted);margin:0 0 0.5rem">Formal model for how agent authority narrows monotonically across delegation chains.</p>
  <div style="font-size:0.8rem;color:var(--text-muted)">DOI: <a href="https://doi.org/10.5281/zenodo.19260073" target="_blank" rel="noopener" style="color:var(--accent)">10.5281/zenodo.19260073</a></div>
  </div>
 
@@ -2905,7 +3104,7 @@
 
  <div style="border-left:2px solid var(--accent);padding-left:1.25rem">
  <div style="font-size:0.78rem;letter-spacing:0.1em;color:var(--text-muted);text-transform:uppercase;margin-bottom:0.4rem">Internet-Draft · 2026 · IETF</div>
- <h4 style="font-size:1.15rem;margin:0 0 0.5rem">draft-pidlisnyi-aps-02 — Agent Passport System</h4>
+ <h4 style="font-size:1.15rem;margin:0 0 0.5rem">draft-pidlisnyi-aps: Agent Passport System</h4>
  <p style="font-size:0.9rem;color:var(--text-muted);margin:0 0 0.5rem">IETF Internet-Draft formalizing the Agent Passport System interoperability surface for cross-protocol agent identity, delegation, and enforcement.</p>
  </div>
 
@@ -3605,6 +3804,6 @@
 })();
 </script>
 
-<footer><p>Built by <a href="/" style="color:inherit">Tymofii Pidlisnyi</a> · 2026 · <a href="https://agent-passport.org" target="_blank">agent-passport.org</a> · <a href="https://aeoess.com" target="_blank">aeoess.com</a> · <a href="https://github.com/aeoess" target="_blank">GitHub</a></p></footer>
+<footer><p>Built by <a href="/" style="color:inherit">Tymofii Pidlisnyi</a> · 2026 · <a href="https://agent-passport.org" target="_blank">agent-passport.org</a> · <a href="https://github.com/aeoess" target="_blank">GitHub</a></p></footer>
 </body>
 </html>
