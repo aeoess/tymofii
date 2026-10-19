@@ -20,7 +20,6 @@ Primary project: Agent Passport System (AEOESS) — open-source enforcement infr
 ## Pages on this site
 
 - https://tymofii.me/ — Portfolio homepage with projects, work history, ideas lab, résumé
-- https://tymofii.me/bio.html — Full biographical narrative
 - https://tymofii.me/passport.html — Agent Passport System overview
 - https://tymofii.me/amplifier-agency.html — Past project: entertainment agency
 - https://tymofii.me/ofnature.html — Past project: sustainable packaging

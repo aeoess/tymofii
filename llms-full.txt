@@ -46,7 +46,6 @@ His writing style avoids clickbait, em-dashes, opening filler ("strong proposal"
 ## Pages on this site
 
 - /                              Portfolio homepage
-- /bio.html                      Full biographical narrative
 - /passport.html                 Agent Passport System overview
 - /amplifier-agency.html         Past project: entertainment agency
 - /ofnature.html                 Past project: sustainable packaging
